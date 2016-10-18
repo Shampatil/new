@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GymModelStoreContainer" CdmEntityContainer="GymEntities">
+    <EntitySetMapping Name="GMSDays">
+      <EntityTypeMapping TypeName="GymModel.GMSDay">
+        <MappingFragment StoreEntitySet="GMSDays">
+          <ScalarProperty Name="DayId" ColumnName="DayId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSDietItems">
+      <EntityTypeMapping TypeName="GymModel.GMSDietItem">
+        <MappingFragment StoreEntitySet="GMSDietItems">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="Foodname" ColumnName="Foodname" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FoodType" ColumnName="FoodType" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Calories" ColumnName="Calories" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSEnquiries">
+      <EntityTypeMapping TypeName="GymModel.GMSEnquiry">
+        <MappingFragment StoreEntitySet="GMSEnquiry">
+          <ScalarProperty Name="InquiryID" ColumnName="InquiryID" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="Fname" ColumnName="Fname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="Mname" ColumnName="Mname" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MarritalStatus" ColumnName="MarritalStatus" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="SourceOfInquiry" ColumnName="SourceOfInquiry" />
+          <ScalarProperty Name="InterestedServices" ColumnName="InterestedServices" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Followup1Date" ColumnName="Followup1Date" />
+          <ScalarProperty Name="Followup1By" ColumnName="Followup1By" />
+          <ScalarProperty Name="Followup1RemiderDate" ColumnName="Followup1RemiderDate" />
+          <ScalarProperty Name="Followup1Status" ColumnName="Followup1Status" />
+          <ScalarProperty Name="Followup2Date" ColumnName="Followup2Date" />
+          <ScalarProperty Name="Followup2By" ColumnName="Followup2By" />
+          <ScalarProperty Name="Followup2RemiderDate" ColumnName="Followup2RemiderDate" />
+          <ScalarProperty Name="Followup2Status" ColumnName="Followup2Status" />
+          <ScalarProperty Name="Followup3Date" ColumnName="Followup3Date" />
+          <ScalarProperty Name="Followup3By" ColumnName="Followup3By" />
+          <ScalarProperty Name="Followup3RemiderDate" ColumnName="Followup3RemiderDate" />
+          <ScalarProperty Name="Followup3Status" ColumnName="Followup3Status" />
+          <ScalarProperty Name="EnquiryDate" ColumnName="EnquiryDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSEvents">
+      <EntityTypeMapping TypeName="GymModel.GMSEvent">
+        <MappingFragment StoreEntitySet="GMSEvent">
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="EventPhoto" ColumnName="EventPhoto" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventVenue" ColumnName="EventVenue" />
+          <ScalarProperty Name="EventCity" ColumnName="EventCity" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSExercises">
+      <EntityTypeMapping TypeName="GymModel.GMSExercis">
+        <MappingFragment StoreEntitySet="GMSExercises">
+          <ScalarProperty Name="ExerciseID" ColumnName="ExerciseID" />
+          <ScalarProperty Name="Excercisename" ColumnName="Excercisename" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Benefits" ColumnName="Benefits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSGyms">
+      <EntityTypeMapping TypeName="GymModel.GMSGym">
+        <MappingFragment StoreEntitySet="GMSGym">
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="Gym_name" ColumnName="Gym_name" />
+          <ScalarProperty Name="Venue" ColumnName="Venue" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Addedby" ColumnName="Addedby" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSIntervals">
+      <EntityTypeMapping TypeName="GymModel.GMSInterval">
+        <MappingFragment StoreEntitySet="GMSIntervals">
+          <ScalarProperty Name="IntervalID" ColumnName="IntervalID" />
+          <ScalarProperty Name="IntervalName" ColumnName="IntervalName" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSInvoices">
+      <EntityTypeMapping TypeName="GymModel.GMSInvoice">
+        <MappingFragment StoreEntitySet="GMSInvoice">
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+          <ScalarProperty Name="InvoiceTime" ColumnName="InvoiceTime" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="Mname" ColumnName="Mname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="PackageStartDate" ColumnName="PackageStartDate" />
+          <ScalarProperty Name="packageEndDate" ColumnName="packageEndDate" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="BalanceAmount" ColumnName="BalanceAmount" />
+          <ScalarProperty Name="ModeOfPayment" ColumnName="ModeOfPayment" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="ChqueNumber" ColumnName="ChqueNumber" />
+          <ScalarProperty Name="AdditionalDiscountApplied" ColumnName="AdditionalDiscountApplied" />
+          <ScalarProperty Name="DiscountInPercentage" ColumnName="DiscountInPercentage" />
+          <ScalarProperty Name="DiscountInAmount" ColumnName="DiscountInAmount" />
+          <ScalarProperty Name="InvoiceBy" ColumnName="InvoiceBy" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSMembers">
+      <EntityTypeMapping TypeName="GymModel.GMSMember">
+        <MappingFragment StoreEntitySet="GMSMember">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="EnquiryID" ColumnName="EnquiryID" />
+          <ScalarProperty Name="PhotoURL" ColumnName="PhotoURL" />
+          <ScalarProperty Name="MemberFname" ColumnName="MemberFname" />
+          <ScalarProperty Name="MemberMname" ColumnName="MemberMname" />
+          <ScalarProperty Name="MemberLname" ColumnName="MemberLname" />
+          <ScalarProperty Name="MemberGender" ColumnName="MemberGender" />
+          <ScalarProperty Name="MarritalStatus" ColumnName="MarritalStatus" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="MemPhotoURL" ColumnName="MemPhotoURL" />
+          <ScalarProperty Name="MemberEmailID" ColumnName="MemberEmailID" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="AlternateNumber" ColumnName="AlternateNumber" />
+          <ScalarProperty Name="ShiftTimeToAttend" ColumnName="ShiftTimeToAttend" />
+          <ScalarProperty Name="EmergencyContactName" ColumnName="EmergencyContactName" />
+          <ScalarProperty Name="EmergencyContactRelation" ColumnName="EmergencyContactRelation" />
+          <ScalarProperty Name="EmergencyContactNumber" ColumnName="EmergencyContactNumber" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="SelectedService" ColumnName="SelectedService" />
+          <ScalarProperty Name="SelectedPackages" ColumnName="SelectedPackages" />
+          <ScalarProperty Name="height" ColumnName="height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="BMI" ColumnName="BMI" />
+          <ScalarProperty Name="Neck" ColumnName="Neck" />
+          <ScalarProperty Name="Chest" ColumnName="Chest" />
+          <ScalarProperty Name="UpperArm" ColumnName="UpperArm" />
+          <ScalarProperty Name="Waist" ColumnName="Waist" />
+          <ScalarProperty Name="LowerAbdomen" ColumnName="LowerAbdomen" />
+          <ScalarProperty Name="Hips" ColumnName="Hips" />
+          <ScalarProperty Name="Thigh" ColumnName="Thigh" />
+          <ScalarProperty Name="Calf" ColumnName="Calf" />
+          <ScalarProperty Name="WHR" ColumnName="WHR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSPackages">
+      <EntityTypeMapping TypeName="GymModel.GMSPackage">
+        <MappingFragment StoreEntitySet="GMSPackage">
+          <ScalarProperty Name="PackageID" ColumnName="PackageID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="SelectedServices" ColumnName="SelectedServices" />
+          <ScalarProperty Name="TaxableOrnot" ColumnName="TaxableOrnot" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ValidTill" ColumnName="ValidTill" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="AprovedBy" ColumnName="AprovedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="AprovalComment" ColumnName="AprovalComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSRegimes">
+      <EntityTypeMapping TypeName="GymModel.GMSRegime">
+        <MappingFragment StoreEntitySet="GMSRegimes">
+          <ScalarProperty Name="RegimeID" ColumnName="RegimeID" />
+          <ScalarProperty Name="RegimeName" ColumnName="RegimeName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSServices">
+      <EntityTypeMapping TypeName="GymModel.GMSService">
+        <MappingFragment StoreEntitySet="GMSServices">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="dailyRate" ColumnName="dailyRate" />
+          <ScalarProperty Name="weeklyrate" ColumnName="weeklyrate" />
+          <ScalarProperty Name="FourthnightlyRate" ColumnName="FourthnightlyRate" />
+          <ScalarProperty Name="MonthlyRate" ColumnName="MonthlyRate" />
+          <ScalarProperty Name="QuarterkyRate" ColumnName="QuarterkyRate" />
+          <ScalarProperty Name="YearlyRate" ColumnName="YearlyRate" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="AprovedBy" ColumnName="AprovedBy" />
+          <ScalarProperty Name="AprovedDate" ColumnName="AprovedDate" />
+          <ScalarProperty Name="AprovalComment" ColumnName="AprovalComment" />
+          <ScalarProperty Name="ServiceAvailableDays" ColumnName="ServiceAvailableDays" />
+          <ScalarProperty Name="ServiceDurationInMinuets" ColumnName="ServiceDurationInMinuets" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSServiceTaxes">
+      <EntityTypeMapping TypeName="GymModel.GMSServiceTax">
+        <MappingFragment StoreEntitySet="GMSServiceTax">
+          <ScalarProperty Name="ServiceTaxID" ColumnName="ServiceTaxID" />
+          <ScalarProperty Name="serviceID" ColumnName="serviceID" />
+          <ScalarProperty Name="ServiceTaxName" ColumnName="ServiceTaxName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSSlotsBookings">
+      <EntityTypeMapping TypeName="GymModel.GMSSlotsBooking">
+        <MappingFragment StoreEntitySet="GMSSlotsBooking">
+          <ScalarProperty Name="SlotID" ColumnName="SlotID" />
+          <ScalarProperty Name="EnquiryID" ColumnName="EnquiryID" />
+          <ScalarProperty Name="Fname" ColumnName="Fname" />
+          <ScalarProperty Name="Mname" ColumnName="Mname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="Selectedslot" ColumnName="Selectedslot" />
+          <ScalarProperty Name="SelectedslotDate" ColumnName="SelectedslotDate" />
+          <ScalarProperty Name="SelectedslotTrainer" ColumnName="SelectedslotTrainer" />
+          <ScalarProperty Name="BookingStatus" ColumnName="BookingStatus" />
+          <ScalarProperty Name="BookingDate" ColumnName="BookingDate" />
+          <ScalarProperty Name="BookedBy" ColumnName="BookedBy" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSTrainers">
+      <EntityTypeMapping TypeName="GymModel.GMSTrainer">
+        <MappingFragment StoreEntitySet="GMSTrainer">
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+          <ScalarProperty Name="TrainerFname" ColumnName="TrainerFname" />
+          <ScalarProperty Name="TrainerMnane" ColumnName="TrainerMnane" />
+          <ScalarProperty Name="TrainerLname" ColumnName="TrainerLname" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MarritalStatus" ColumnName="MarritalStatus" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="PhotoURL" ColumnName="PhotoURL" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="AlternateMobile" ColumnName="AlternateMobile" />
+          <ScalarProperty Name="ShiftTimings" ColumnName="ShiftTimings" />
+          <ScalarProperty Name="EmergencyContactName" ColumnName="EmergencyContactName" />
+          <ScalarProperty Name="EmergencyContactNumber" ColumnName="EmergencyContactNumber" />
+          <ScalarProperty Name="EmergencyContactRelation" ColumnName="EmergencyContactRelation" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="TrainerRole" ColumnName="TrainerRole" />
+          <ScalarProperty Name="AttachedDocuments" ColumnName="AttachedDocuments" />
+          <ScalarProperty Name="JoinedAs" ColumnName="JoinedAs" />
+          <ScalarProperty Name="PreviousDesignation" ColumnName="PreviousDesignation" />
+          <ScalarProperty Name="TotalExperience" ColumnName="TotalExperience" />
+          <ScalarProperty Name="ReasontoLeftPrevJob" ColumnName="ReasontoLeftPrevJob" />
+          <ScalarProperty Name="ResignDate" ColumnName="ResignDate" />
+          <ScalarProperty Name="ReasontoResign" ColumnName="ReasontoResign" />
+          <ScalarProperty Name="TrainerStatus" ColumnName="TrainerStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSTrainerAvailabilities">
+      <EntityTypeMapping TypeName="GymModel.GMSTrainerAvailability">
+        <MappingFragment StoreEntitySet="GMSTrainerAvailability">
+          <ScalarProperty Name="AvailabilityID" ColumnName="AvailabilityID" />
+          <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+          <ScalarProperty Name="AvailableforService" ColumnName="AvailableforService" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="Endtime" ColumnName="Endtime" />
+          <ScalarProperty Name="break1start" ColumnName="break1start" />
+          <ScalarProperty Name="break1End" ColumnName="break1End" />
+          <ScalarProperty Name="break2start" ColumnName="break2start" />
+          <ScalarProperty Name="break2End" ColumnName="break2End" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSWorkouts">
+      <EntityTypeMapping TypeName="GymModel.GMSWorkout">
+        <MappingFragment StoreEntitySet="GMSWorkout">
+          <ScalarProperty Name="WorkoutID" ColumnName="WorkoutID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Exercise" ColumnName="Exercise" />
+          <ScalarProperty Name="Sets" ColumnName="Sets" />
+          <ScalarProperty Name="Reps" ColumnName="Reps" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMSDiets">
+      <EntityTypeMapping TypeName="GymModel.GMSDiet">
+        <MappingFragment StoreEntitySet="GMSDiet">
+          <ScalarProperty Name="DietID" ColumnName="DietID" />
+          <ScalarProperty Name="GymID" ColumnName="GymID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="NotallowedFoods" ColumnName="NotallowedFoods" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Food" ColumnName="Food" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

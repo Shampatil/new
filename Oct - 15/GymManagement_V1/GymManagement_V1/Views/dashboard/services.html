@@ -1,0 +1,34 @@
+﻿<div class="col-md-12">
+    <p></p>
+</div>
+<div class="col-md-12">
+    <p>
+    </p>
+</div><br />
+
+<div class="">
+    <div class="panel-custom-horrible-red">
+        <h1 class="header light gray3 fancy"><span class="colored">Our Services</span></h1>
+        <div class="panel-body">
+            <div class="col-md-12"><p></p></div>
+            <div class="col-md-4" ng-repeat="todo in GMSServices">
+                        <legend>
+                            <a><span class="glyphicon glyphicon-stats"></span></a>
+                            <label style="font-size:200%; ">&nbsp;&nbsp;{{todo.Servicename}}</label>
+                        </legend>
+                        <div class="col-md-7">
+                            <p>
+                                <label>Description: </label>    {{todo.ServiceDesciption}}
+                            </p>
+                            <p>
+                                <label>Service Charge</label>   {{todo.ServiceCharge}}
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src={{todo.PhotoURL}} class="img-thumbnail" alt="{{todo.Servicename}}" width="200" height="200">
+                            {{todo.PhotoURL}}
+                        </div>
+                </div>
+        </div>
+    </div><div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div>
+</div>

@@ -1,0 +1,362 @@
+﻿﻿<form name="ServiceListController" ng-app="gymManagementApp" ng-controller="ServiceListController" ng-submit="addService()">
+
+    <div class="container">
+        <h1 class="header light gray3 fancy"><span class="colored">Services List</span>  </h1>
+    </div>
+
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="panel-custom-horrible-red">
+                <h1 class="header light gray3 fancy"><span class="colored">Services Details</span></h1>
+
+                <div class="panel-body">
+                    <span style="font-size:150%;color: #402063; font-family:'Times New Roman', Times, serif;">Select From Dropdown List To Perform Approval,Update,Delete</span>&nbsp;&nbsp;
+                    <select class="form-group" ng-model="selectperform" name="productname" required>
+                        <option value="">Select Perform</option>
+                        <option ng-if="ServiceAproval==true">Approval</option>
+                        <option ng-if="ServiceDel==true">Delete</option>
+                    </select>
+
+
+                    </br>
+                    <hr style="border-color:black" />
+                    <div ng-if="selectperform==null" class="table-responsive" style="overflow:scroll;height:400px">
+                        <div class="container">
+
+                            <div class="col-lg-2">
+                                <label style="font-size:150%;color: #402063; font-family:'Times New Roman', Times, serif;">Serach Service:-</label></br>
+
+                            </div>
+                            <div class="col-lg-1">
+                                <input placeholder="ID" class="form-control" ng-model="search.ID">
+
+                            </div>
+
+                            <div class="col-lg-2">
+
+                                <input placeholder="SEARCH-BY-SERVICE-NAME" class="form-control" ng-model="search.Servicename">
+                            </div>
+
+
+
+                        </div>
+                        <br />
+                        <table class="table table-bordered table-hover">
+
+                            <thead>
+                                <tr>
+                                    <th class="a">ServiceID</th>
+                                    <th class="a">Servicename</th>
+                                    <th class="a">Description</th>
+                                    <th class="a">ServiceCharge</th>
+                                    <th class="a">TotalTax</th>
+                                    <th class="a">StartDate</th>
+                                    <th class="a">EndDate</th>
+                                    <th class="a">CreatedBy</th>
+                                    <th class="a">CreatedDate</th>
+                                    <th class="a">AprovedBy</th>
+                                    <th class="a">AprovedDate</th>
+                                    <th class="a">AprovalStatus</th>
+
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                <tr ng-repeat="mem in service | filter: search:strict">
+                                    <td>{{mem.ID}}</td>
+
+                                    <td>{{mem.Servicename}}</td>
+
+                                    <td>{{mem.ServiceDesciption}}</td>
+                                    <td>{{mem.ServiceCharge}}</td>
+                                    <td>{{mem.TotalTax}}</td>
+                                    <td>{{mem.StartDate}}</td>
+                                    <td>{{mem.EndDate}}</td>
+
+                                    <td>{{mem.CreatedBy}}</td>
+                                    <td>{{mem.CreatedDate}}</td>
+
+                                    <td>{{mem.AprovedBy}}</td>
+
+                                    <td>{{mem.AprovedDate}}</td>
+                                    <td ng-if="mem.AprovalStatus=='Aproved'" style="color:green">{{mem.AprovalStatus}}</td>
+                                    <td ng-if="mem.AprovalStatus=='Draft'" style="color: #CEE05A">{{mem.AprovalStatus}}</td>
+                                    <td ng-if="mem.AprovalStatus=='Lost'" style="color: red">{{mem.AprovalStatus}}</td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <!--Start Delete Code-->
+
+                    <div ng-if="selectperform=='Delete'">
+                        <div class="container">
+
+                            <div class="col-lg-2">
+                                <label style="font-size:150%;color: #402063; font-family:'Times New Roman', Times, serif;">Serach Service:-</label></br>
+
+                            </div>
+                            <div class="col-lg-1">
+                                <input placeholder="ID" class="form-control" ng-model="search1.ID">
+
+                            </div>
+
+                            <div class="col-lg-2">
+
+                                <input placeholder="SEARCH-BY-SERVICE-NAME" class="form-control" ng-model="search1.Servicename">
+                            </div>
+
+
+
+                        </div>
+                        <br />
+                        <div class="table-responsive" style="overflow:scroll; height:400px">
+                            <table class="table table-bordered table-hover">
+
+                                <thead>
+                                    <tr>
+                                        <th class="a">ServiceID</th>
+                                        <th class="a">Servicename</th>
+                                        <th class="a">ServiceCharge</th>
+                                        <th class="a">TotalTax</th>
+                                        <th class="a">StartDate</th>
+                                        <th class="a">EndDate</th>
+                                        <th class="a">CreatedBy</th>
+                                        <th class="a">CreatedDate</th>
+                                        <th class="a">AprovalStatus</th>
+                                        <th class="a">Action</th>
+
+
+
+
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    <tr ng-repeat="mem in service | filter: search1:strict">
+                                        <td>{{mem.ID}}</td>
+
+                                        <td>{{mem.Servicename}}</td>
+                                        <td>{{mem.ServiceCharge}}</td>
+                                        <td>{{mem.TotalTax}}</td>
+                                        <td>{{mem.StartDate}}</td>
+                                        <td>{{mem.EndDate}}</td>
+                                        <td>{{mem.CreatedBy}}</td>
+                                        <td>{{mem.CreatedDate}}</td>
+                                        <td style="color:green" ng-if="mem.AprovalStatus=='Aproved'">{{mem.AprovalStatus}}</td>
+                                        <td style="color:orange" ng-if="mem.AprovalStatus=='Draft'">{{mem.AprovalStatus}}</td>
+                                        <td style="color:red" ng-if="mem.AprovalStatus=='Lost'">{{mem.AprovalStatus}}</td>
+
+                                        <td ng-if="ServiceDel==true"><span ng-if="mem.AprovalStatus!=='Lost'" style="color: red; font-size: 17px" ng-click="Delete(mem.ID)">Delete</span></td>
+
+
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <!--End Delete-->
+                    <!--Start Aproval Code-->
+
+                    <div ng-if="selectperform=='Aproval'">
+
+
+
+                        <!--<div class="table-responsive" style="overflow:scroll">
+                            <table class="table table-bordered table-hover">
+
+                                <thead>
+                                    <tr>
+                                        <th class="a">ServiceID</th>
+                                        <th class="a">Servicename</th>
+                                        <th class="a">ServiceCharge</th>
+                                        <th class="a">TotalTax</th>
+                                        <th class="a">StartDate</th>
+                                        <th class="a">EndDate</th>
+                                        <th class="a">CreatedBy</th>
+                                        <th class="a">CreatedDate</th>
+                                        <th class="a">AprovalStatus</th>
+                                        <th class="a">Action</th>
+
+
+
+
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    <tr ng-repeat="mem in service | filter: search:strict">
+                                        <td>{{mem.ID}}</td>
+
+                                        <td>{{mem.Servicename}}</td>
+                                        <td>{{mem.ServiceCharge}}</td>
+                                        <td>{{mem.TotalTax}}</td>
+                                        <td>{{mem.StartDate}}</td>
+                                        <td>{{mem.EndDate}}</td>
+                                        <td>{{mem.CreatedBy}}</td>
+                                        <td>{{mem.CreatedDate}}</td>
+                                        <td style="color: #CEE05A">{{mem.AprovalStatus}}</td>
+                                        <td><span ng-if="ServiceDel==true" style="color: green; font-size: 17px"> Aproval</span></td>
+
+
+
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>-->
+
+                        <div class="container">
+
+                            <div class="col-lg-2">
+                                <label style="font-size:150%;color: #402063; font-family:'Times New Roman', Times, serif;">Serach Service:-</label></br>
+
+                            </div>
+                            <div class="col-lg-1">
+                                <input placeholder="ID" class="form-control" ng-model="search2.ID">
+
+                            </div>
+
+                            <div class="col-lg-2">
+
+                                <input placeholder="SEARCH-BY-SERVICE-NAME" class="form-control" ng-model="search2.Servicename">
+                            </div>
+
+
+
+                        </div>
+                        <br />
+
+
+                        <div class="table-responsive" style="overflow:scroll; height:400px">
+
+                            <table class="table table-bordered table-hover">
+
+                                <thead>
+                                    <tr>
+                                        <th class="a">ServiceID</th>
+                                        <th class="a">Servicename</th>
+                                        <th class="a">ServiceCharge</th>
+                                        <th class="a">TotalTax</th>
+                                        <th class="a">StartDate</th>
+                                        <th class="a">EndDate</th>
+                                        <th class="a">CreatedBy</th>
+                                        <th class="a">CreatedDate</th>
+                                        <th class="a">AprovalStatus</th>
+                                        <th class="a">Action</th>
+
+
+                                    </tr>
+                                </thead>
+
+
+                                <tbody>
+                                    <tr ng-repeat="mem in service | filter: search2:strict" ng-include="getTemplate(mem)">
+                                        <script type="text/ng-template" id="display">
+
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.ID}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.Servicename}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.ServiceCharge}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.TotalTax}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.StartDate}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.EndDate}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.CreatedBy}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">{{mem.CreatedDate}}</td>
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'"><span style="color:orange">{{mem.AprovalStatus}}</span></td>
+
+
+
+
+                                            <td ng-if="mem.AprovalStatus!=='Aproved'">
+                                                <button type="button" class="btn btn-primary" ng-click="editEmployee(mem)">Aproval</button>
+
+                                            </td>
+                                        </script>
+
+                                        <script type="text/ng-template" id="edit">
+
+                                            <td><input type="text" disabled ng-model=mem.ID id="ID" class="form-control input-sm" /></td>
+
+                                            <td><input type="text" disabled ng-model=mem.Servicename id="ID" class="form-control input-sm" /></td>
+
+                                            <td><input type="text" disabled ng-model=mem.ServiceCharge id="ID" class="form-control input-sm" /></td>
+
+
+                                            <td>
+                                                <label style="font-size:130%;color: #402063; font-family:'Times New Roman', Times, serif;">Select Aproval: </label>
+                                                <div class="form-group" ng-class="{'has-error': ServiceListController.aproval.$invalid}">
+                                                    <select class="form-group" ng-model="Aproval" id="Aproval" name="aproval" required>
+                                                        <option value="">Select Aproval</option>
+                                                        <option>Aproved</option>
+                                                        <option>Pending</option>
+                                                        <option>Lost</option>
+                                                    </select>
+                                                    <span class="help-block" ng-show="ServiceListController.aproval.$error.required" style="color:red">Mandatory Field</span>
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <label style="font-size:130%;color: #402063; font-family:'Times New Roman', Times, serif;">Comment: </label>
+                                                <div class="form-group" ng-class="{'has-error': ServiceListController.Aprovalstatus.$invalid}">
+                                                    <input class="form-control" name="Aprovalstatus" placeholder="Enter Aproval Status" ng-model="Aprovalpackcomment" id="Aprovalpackcomment" ng-maxlength="50" required>
+                                                    <span class="help-block" ng-show="ServiceListController.Aprovalstatus.$error.required" style="color:red">Mandatory Field</span>
+                                                    <span class="help-block" ng-show="ServiceListController.Aprovalstatus.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <br /><br />
+                                                <button type="button" class="btn btn-primary" ng-disabled="!ServiceListController.$valid" ng-click="aproveservice(mem)">Save</button>
+                                                <button type="button" class="btn btn-danger" ng-click="reset()">Cancel</button>
+                                            </td>
+
+                                        </script>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <!--</div>-->
+                <!--End Aproval Code-->
+                <!--</div>-->
+
+
+
+
+
+
+
+
+
+            </div>
+            </br></br>
+        </div>
+        </br></br>
+    </div>
+</form>

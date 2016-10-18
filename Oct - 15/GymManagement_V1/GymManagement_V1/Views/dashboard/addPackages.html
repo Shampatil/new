@@ -1,0 +1,416 @@
+﻿﻿<form name="addPackagesController" ng-app="gymManagementApp" ng-controller="addPackagesController" novalidate>
+
+    <div class="container">
+        <br />
+        <h1 class="header light gray3 fancy"><span class="colored">Add-Packages</span></h1>
+        <!--<div class="panel-custom-horrible-red" align="center">
+            <div class="panel-heading"></div>
+        </div>-->
+    </div>
+
+    <br />
+
+
+
+    <div class="container">
+        <div class="panel-custom-horrible-red">
+            <div class="panel-heading">Packages Details  </div>
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+
+                        <div class="col-md-6">
+                            <label padding-top:8px" style="font-size:16px">Package Name </label>
+                            <span ng-model="CurrentDate" style="visibility:hidden"> {{CurrentDate | date:'dd/MM/yyyy'}}</span>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group" ng-class="{'has-error': addPackagesController.PackageName.$invalid}">
+                                <input class="form-control" name="PackageName" placeholder="Package Name" ng-model="PackageName" ng-maxlength="100" required>
+                                <span class="help-block" ng-show="addPackagesController.PackageName.$error.required" style="color:red">Mandatory Field</span>
+                                <span class="help-block" ng-show="addPackagesController.PackageName.$error.maxlength" style="color:red">Maximum 100 letters Allowed</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3">
+                        <div class="col-md-3">
+                            <label padding-top:8px" style="font-size:16px"> Validity</label>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group" ng-class="{'has-error': addPackagesController.validity.$invalid}">
+                                <input class="form-control" name="validity" id="validity" placeholder="Enter no of Day" ng-model="Day" ng-maxlength="3" ng-pattern="/^[0-9]*$/" required>
+                                <span class="help-block" ng-show="addPackagesController.validity.$error.pattern" style="color:red">Only Positive Numbers Are allowed!</span>
+                                <span class="help-block" ng-show="addPackagesController.validity.$error.required" style="color:red">Mandatory Field</span>
+                                <span class="help-block" ng-show="addPackagesController.validity.$error.maxlength" style="color:red"> Package Days Should Between 1 to 999</span>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-5">
+
+                        <div class="col-md-4">
+                            <label padding-top:8px" style="font-size:16px"> Package Description</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group" ng-class="{'has-error': addPackagesController.packageDescription.$invalid}">
+                                <input class="form-control" id="packageDescription" name="packageDescription" placeholder="Package Desciption" ng-model="packageDescription" ng-maxlength="50" required>
+                                <span class="help-block" ng-show="addPackagesController.packageDescription.$error.required" style="color:red">Mandatory Field</span>
+                                <span class="help-block" ng-show="addPackagesController.packageDescription.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </br>
+
+                <!--<div class="col-md-12">
+
+                    <div class="col-md-3">
+                        <div class="col-md-6">
+                            <label padding-top:8px" style="font-size:16px">Start Date:-</label>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group">
+                                <div class="icon-addon addon-md">
+                                    <input name="ServiceStartdate" ng-model="ServiceStartdate" class="form-control" id="ServiceStartdate" type="text">
+                                    <label for="Start Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="email"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="col-md-6">
+                            <label padding-top:8px" style="font-size:16px">End Date:-</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="icon-addon addon-md">
+                                    <input name="ServiceEndDate" ng-model="ServiceEndDate" class="form-control" id="ServiceEndDate" type="text">
+                                    <label for="End Date" class="glyphicon glyphicon-calendar" rel="tooltip" title="email"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>-->
+
+
+
+
+
+
+
+
+                <div class="col-md-9" ng-if="PackageName!=null && Day!= null && packageDescription!=null">
+                    </br>
+                    <div class="panel-custom-horrible-red">
+                        <div class="panel-heading">Add Services</div>
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="" style="overflow:scroll">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="c">Service</th>
+                                                <th class="c">Description</th>
+                                                <th class="c"> Base Price </th>
+                                                <th class="c"> Price After Discount </th>
+                                                <th class="c">Total Tax %</th>
+                                                <th class="c">Tax Amount RS</th>
+                                                <th class="c">Dis-type</th>
+                                                <th class="c">Disc</th>
+                                                <th class="c">Total Price</th>
+                                                <th class="c">
+                                                    Remove
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr></tr>
+
+
+                                            <tr ng-repeat="r in row">
+                                                <td>
+                                                    <!--<div class="form-group" ng-class="{'has-error': addPackagesController.serviceName.$invalid}">
+                                                        <select ng-model="r.Servicename" name="serviceName" ng-change="getProductDetails(r)" ng-options="p.Servicename  as p.Servicename for p in service" required>
+                                                            <option value="">Select Service</option>
+                                                        </select>
+                                                        <span class="help-block" ng-show="addPackagesController.Servicename.$error.required" style="color:red">Mandatory Field</span>
+                                                    </div>-->
+                                                    <div class="form-group" ng-class="{'has-error': addPackagesController.Servicename.$invalid}">
+                                                        <select ng-model="r.Servicename" id="Servicename" name="serviceName" title="Please Select and Service" ng-change="getProductDetails(r)" ng-options="p.Servicename  as p.Servicename for p in service" required="Please Select Service"></select>
+                                                        <span class="help-block" ng-show="addPackagesController.serviceName.$error.required" style="color:red">Please Select Service Name</span>
+                                                    </div>
+                                                </td>
+                                                <td >
+                                                    <input style="width:150px" type="text" ng-model="r.contain" disabled="disabled" value="0" />
+                                                    <input type="hidden" ng-model="r.item_description" value="" />
+                                                </td>
+                                                <td>
+                                                    <input style="width:70px" type="text" value=" {{r.amount=r.product_mrp*Day}}" disabled="disabled" />
+                                                </td>
+
+                                                <td ng-if="r.ServiceDiscounttype==null">{{r.final=r.amount=r.product_mrp*Day}}</td>
+                                                <td ng-if="r.ServiceDiscounttype=='Rupees'">{{r.final=r.amount -r.dis}}</td>
+                                                <td ng-if="r.ServiceDiscounttype=='Percentage'">{{r.final=r.amount-(r.amount*r.dis/100)}}<span style="visibility:hidden">{{r.finaldiscount=r.dis}}</span></td>
+
+                                                <td>
+                                                    <input style="width:70px" type="text" ng-model="r.Tax" value="" disabled="disabled" />
+                                                </td>
+                                               <td>
+                                                    <input style="width:70px" type="text" ng-model="r.taxamount" value="" disabled="disabled" />
+                                                    <span style="visibility:hidden">{{r.taxamount=r.final*r.Tax/100}}</span>
+                                                </td>
+
+                                                <td>
+
+                                                    <!--<select ng-model="r.ServiceDiscounttype" id="ServiceDiscounttype">
+                                                        <option>Rupees</option>
+                                                        <option>Percentage</option>
+                                                    </select>-->
+
+                                                    <div ng-class="{'has-error': addPackagesController.ServiceDiscounttype.$invalid}" class="form-group">
+                                                        <select ng-model="r.ServiceDiscounttype" name="ServiceDiscounttype" id="ServiceDiscounttype" required>
+                                                            <option>Rupees</option>
+                                                            <option>Percentage</option>
+                                                        </select>
+                                                        <span class="help-block" ng-show="addPackagesController.ServiceDiscounttype.$error.required" style="color:red">Plase Select Discount Type</span>
+                                                    </div>
+
+
+                                                </td>
+
+                                                <td>
+                                                    <!--<div ng-class="{'has-error': addPackagesController.discountservice.$invalid}" class="form-group">
+                                                        <input ng-if="r.ServiceDiscounttype=='Rupees'" class="form-control" type="number" style="width: 80px" ng-model="r.dis" value="0" name="discountservice" placeholder="" max="{{r.cost}}" ng-pattern="/^[+]?[0-9]/" required />
+                                                        <input ng-if="r.ServiceDiscounttype=='Percentage'" class="form-control" type="number" style="width: 80px" ng-model="r.dis" value="0" ng-maxlength="4" name="discountservice" placeholder="" max="100" ng-pattern="/^[+]?[0-9]/" required />
+                                                        <div class="help-block" ng-show="addPackagesController.discountservice.$error.pattern" style="color:red">Only Positive Numeric field </div>
+                                                        <span class="help-block" ng-show="addPackagesController.discountservice.$error.maxlength" style="color:red">Minimum 3 letters Allowed</span>
+                                                        <div class="help-block" ng-show="addPackagesController.discountservice.$error.max" style="color:red">Discount sholud be less than Price</div>
+                                                    </div>-->
+                                                    <div ng-class="{'has-error': addPackagesController.discountservice.$invalid}" class="form-group">
+                                                        <input ng-if="r.ServiceDiscounttype=='Rupees'" class="form-control" type="number" style="width: 80px" ng-model="r.dis" value="0" name="discountservice" placeholder="" ng-max="{{r.cost}}" ng-pattern="/^[+]?[0-9]/" required />
+                                                        <input ng-if="r.ServiceDiscounttype=='Percentage'" class="form-control" type="number" style="width: 80px" ng-model="r.dis" value="0" ng-maxlength="4" name="discountservice" placeholder="" ng-max={{100}} ng-pattern="/^[+]?[0-9]/" required />
+                                                        <span class="help-block" ng-show="addPackagesController.discountservice.$error.pattern" style="color:red">Only Positive Numeric field </span>
+                                                        <span class="help-block" ng-show="addPackagesController.discountservice.$error.required" style="color:red">Required (if not Applicable add 0)</span>
+                                                        <span class="help-block" ng-show="addPackagesController.discountservice.$error.maxlength" style="color:red">Minimum 3 letters Allowed</span>
+                                                        <span class="help-block" ng-show="addPackagesController.discountservice.$error.max" style="color:red">Discount sholud be less than Price</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+
+                                                    <input style="width:70px" type="text" ng-model="r.cost" value="" min="0" step="0.01" disabled="disabled" />
+                                                    <span style="visibility:hidden"> {{r.cost=r.final+r.taxamount}}</span>
+                                                    <span style="visibility:hidden">{{r.finaldiscount=r.dis}}</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <div class="text-center">
+                                                        <button ng-click="rRow($index)" class="btn btn-danger btn_remove">x</button>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <button ng-click="addRow()" class="btn btn-success">Add-Service</button>
+                                                </td>
+
+                                                <td>
+                                                    <h4 style="color: black;font-size:14px;font:bold">Base-Price :</h4>
+                                                    <h4 style="color: black;font-size:14px;font:bold">Discount :</h4>
+
+                                                    <hr style="border-color:black" />
+
+                                                    <strong style="color: #402063">Price After Discount :</strong>
+
+                                                    <h4 style="color: black;font-size:14px;font:bold">Total-Tax Amount :</h4>
+
+                                                    <hr style="border-color:black" />
+
+                                                    <strong style="color: #402063">Total-Price :</strong>
+
+                                                </td>
+
+
+                                                <td>
+
+                                                    <h4 style="color: black;font-size:14px;font:bold">{{amount_after_discount()}}</h4>
+                                                    <h4 style="color: black;font-size:14px;font:bold"> {{amount_after_discount()-total_rupess()}} </h4>
+
+                                                    <hr style="border-color:black" />
+
+                                                    <h4><strong style="color: #402063" ng-model="gg">{{total_amount()}}</strong>  </h4>
+
+                                                    <h4 style="color: black;font-size:14px;font:bold">{{total_taxamount()}}  </h4>
+
+                                                    <hr style="border-color:black" />
+
+                                                    <h4><strong style="color: #402063">{{MRP=total_amount()+total_taxamount()}}</strong> </h4>
+
+                                                </td>
+
+                                                <td><input style="visibility:hidden" id="totaltaxamount" type="text" value=" {{total_taxamount()}}" /></td>
+                                                <td><input style="visibility:hidden" id="discount" type="text" value=" {{amount_after_discount()-total_rupess()}}" /></td>
+                                                <td><input style="visibility:hidden" id="TotalTax" type="text" value="  {{ total_tax()}}" /></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3" ng-if="PackageName!=null && Day!= null && packageDescription!=null">
+                    </br>
+                    <div class="panel-custom-horrible-red">
+                        <div class="panel-heading"><label style="font-size:120%;color: #402063; font-family:'Times New Roman', Times, serif;">If Packages is Taxable Add Taxes</label></div>
+                        <label></label>
+                        <div class="container">
+
+                            <div data-ng-repeat="choice in choices">
+
+                                <div class="col-md-5">
+                                    <div ng-class="{'has-error': addPackagesController.taxName.$invalid}" class="form-group">
+                                        <select class="Sitedropdown form-control" ng-model="choice.taxName" ng-change=amount_after_discount() ng-options=" enq.GMStaxname as enq.GMStaxname for enq in Tax" required>
+                                            <option value="">Select Tax Type</option>
+                                        </select>
+                                        <span class="help-block" ng-show="addPackagesController.taxName.$invalid " style="color:red">Select service</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+
+                                    <div ng-class="{'has-error': addPackagesController.taxRate.$invalid}" class="form-group">
+                                        <input class="form-control" type="text" ng-model="choice.taxRate" placeholder="Enter tax percentage" ng-change=amount_after_discount() ng-maxlength="6" max="300" ng-pattern="/^[-]?(?:[.]\d+|\d+(?:[.]\d*)?)$/" required>
+                                        <div class="help-block" ng-show="addPackagesController.taxRate.$error.required" style="color:red">Mandatory Field</div>
+                                        <div class="help-block" ng-show="addPackagesController.taxRate.$error.pattern" style="color:red">Only Positive Numeric field  with Decimals Values Are Allowed</div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="remove btn btn-primary" ng-click="removeChoice($index)">-</button>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <label></label>
+                            </div>
+                            <div class="col-md-5" ng-if="totall()!=null">
+
+                            </div>
+                            <div class="container"><p></p></div>
+                            <div class="col-md-12">
+                                <div class="col-md-5">
+                                    <button class="btn btn-primary" ng-click="addNewChoice()">Add Tax</button><div class="container"><p></p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" ng-if="PackageName!=null && Day!= null && packageDescription!=null">
+
+                    </br></br>
+
+                    <div class="col-md-2">
+                        <label> Included-Services:-</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" ng-repeat="r in row" disabled="disabled" style="width: 80px" value="{{r.item_description}}" id="services" />
+                    </div>
+                    <div class="col-md-2">
+                        <label> Package-Total-Tax:-</label>
+                    </div>
+                    <div class="col-md-1">
+                        <input class="form-control" type="text" id="PackageTotalTax" name="p1" placeholder="Total-Tax" disabled="disabled" title="MRP" value="{{totall()}}">
+                        <span style="visibility:hidden">{{Tamount=MRP*totall()/100}}</span>
+                    </div>
+
+                </div>
+                <!--<hr style="border-color:black" />-->
+
+                <div class="col-md-12" ng-if="PackageName!=null && Day!= null && packageDescription!=null">
+                    </br></br>
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <label>Package-Price After Discounts </label>
+                        </div>
+                        <div class="col-md-6 ">
+                            <input id="MRP" value="{{total_amount()}}" class="form-control" readonly/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <label>Service Total Tax &#x20B9; </label>
+                        </div>
+                        <div class="col-md-6">
+                            <!--<input id="ServiceLevelTotalTax" >-->
+                            <input class="form-control" value="{{total_taxamount()}}" id="ServiceLevelTotalTax" readonly/>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <label>Package Total Tax &#x20B9;</label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" name="" class="taxrate form-control" id="TotalTaxAmount" disabled="disabled" placeholder="Tax Amount" value="{{total_amount()*totall()/100}}">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <label>Gross Package Price:-</label>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input class="form-control" id="grossPackagePrice" value="{{(total_amount()) + (total_taxamount()+(total_amount()*totall()/100))}}" readonly/>
+                        </div>
+                    </div>
+
+
+
+                    <br /><br />
+
+                    <div class="text-center">
+                        <br /><br /><br />
+                        <button type="submit" class="btn btn-primary  btn-lg" value="Submit" title="Submit" ng-click="addService()" ng-disabled="(( !addPackagesController.$valid)||(press==0))">Create Package</button>
+                        <button type="reset" class="btn btn-danger btn-lg" onclick="document.location.href = 'index.html#/dashboard/home';">Cancel</button>
+                    </div>
+
+
+                    <br /><br /><br /><br />
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</form>

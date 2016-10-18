@@ -1,0 +1,161 @@
+﻿<form name="searchMemberController" ng-submit="submitForm()">
+
+    <div class="col-md-12">
+        <p></p>
+    </div>
+
+            <!-- Heading panel -->
+            <div class="container">
+                <div class="col-md-12">
+                    <h1 class="header light gray3 fancy"><span class="colored">Renewal</span></h1>
+
+                    <!--<div class="panel panel-info">
+                        <div class="panel-heading" align="center"><h1>Member Search</h1></div>
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="panel panel-info">
+                    <div class="panel-heading" align="center"><label>Enquiry Details</label></div>
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                                <p></p>
+                            </div>
+
+                            <div class="col-md-12">
+                                <p></p>
+                            </div>
+                                <table class="table table-bordered table-hover" style="overflow:scroll">
+                                    <!--table-striped-->
+                                    <thead>
+                                        <tr>
+                                            <th>Enquiry_id</th>
+                                            <th>Member_id</th>
+                                            <th>fname</th>
+                                            <th>mname</th>
+                                            <th>Lname</th>
+                                            <th>Marrital_Status</th>
+                                            <th>Gender</th>
+                                            <th>mobile</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                            <th>Pin_Code</th>
+                                            <th>Admission_Date</th>
+                                            <th>Packages</th>
+                                            <th>Services</th>
+                                            <th>Package_Expire</th>
+                                            <th>MembershipStatus</th>
+                                        </tr>
+                                    </thead>
+
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Enquiry_id" class="form-control" placeholder="Enquiry ID">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Member_id" class="form-control" placeholder="Member ID">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.fname" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.mname" class="form-control" placeholder="Middle Name">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Lname" class="form-control" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Marrital_Status" class="form-control" placeholder="Merrital Status">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p></p>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Gender" class="form-control" placeholder="Gender">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.mobile" class="form-control" placeholder="Mobile">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Address" class="form-control" placeholder="Address">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.City" class="form-control" placeholder="City">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.State" class="form-control" placeholder="State">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p></p>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Pin_Code" class="form-control" placeholder="Pin Code">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Admission_Date" class="form-control" placeholder="Admission Date">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Packages" class="form-control" placeholder="Packages">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Services" class="form-control" placeholder="Services">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.Package_Expire" class="form-control" placeholder="Package_Expire">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input ng-model="search.MembershipStatus" class="form-control" placeholder="Membership Status">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <p></p>
+                                    </div>
+                                    <tbody>
+                                        <tr ng-repeat="mem in searchMember | filter: search:strict ">
+                                            <td>{{mem.Enquiry_id}}</td>
+                                            <td>{{mem.Member_id}}</td>
+                                            <td><img src="{{mem.photourl}}" style="width:100px; height:100px;" /></td>
+                                            <td>{{mem.fname}}</td>
+                                            <td>{{mem.mname}}</td>
+                                            <td>{{mem.Lname}}</td>
+                                            <td>{{mem.Marrital_Status}}</td>
+                                            <td>{{mem.Gender}}</td>
+                                            <td>{{mem.mobile}}</td>
+                                            <td>{{mem.Email}}</td>
+                                            <td>{{mem.Address}}</td>
+                                            <td>{{mem.City}}</td>
+                                            <td>{{mem.State}}</td>
+                                            <td>{{mem.Pin_Code}}</td>
+                                            <td>{{mem.Admission_Date}}</td>
+                                            <td>{{mem.Packages}}</td>
+                                            <td>{{mem.Services}}</td>
+                                            <td>{{mem.Package_Expire}}</td>
+                                            <td>{{mem.MembershipStatus}}</td>
+                                            <td><button class="btn btn-primary" onclick="document.location.href = 'index.html#/dashboard/'">Update</button></td>
+                                            <td><button class="btn btn-primary" onclick="document.location.href = 'index.html#/dashboard/'">Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                     
+                    </div>
+                        </div>
+                    </div>
+
+</form>                        
+
+
+
+
+

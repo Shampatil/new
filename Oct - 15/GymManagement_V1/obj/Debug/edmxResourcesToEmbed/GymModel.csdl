@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GymModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GMSDay">
+    <Key>
+      <PropertyRef Name="DayId" />
+    </Key>
+    <Property Name="DayId" Type="Int64" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSDietItem">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="Int64" Nullable="false" />
+    <Property Name="Foodname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FoodType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Calories" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GMSEnquiry">
+    <Key>
+      <PropertyRef Name="InquiryID" />
+    </Key>
+    <Property Name="InquiryID" Type="Int64" Nullable="false" />
+    <Property Name="Prefix" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MobileNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="MarritalStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pincode" Type="Int64" />
+    <Property Name="SourceOfInquiry" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InterestedServices" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Followup1Date" Type="DateTime" Precision="3" />
+    <Property Name="Followup1By" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Followup1RemiderDate" Type="DateTime" Precision="3" />
+    <Property Name="Followup1Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Followup2Date" Type="DateTime" Precision="3" />
+    <Property Name="Followup2By" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Followup2RemiderDate" Type="DateTime" Precision="3" />
+    <Property Name="Followup2Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Followup3Date" Type="DateTime" Precision="3" />
+    <Property Name="Followup3By" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Followup3RemiderDate" Type="DateTime" Precision="3" />
+    <Property Name="Followup3Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EnquiryDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="GMSEvent">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GymID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EventID" Type="Int64" Nullable="false" />
+    <Property Name="EventName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EventPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventDate" Type="DateTime" Precision="0" />
+    <Property Name="EventVenue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EventCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSExercis">
+    <Key>
+      <PropertyRef Name="ExerciseID" />
+    </Key>
+    <Property Name="ExerciseID" Type="Int64" Nullable="false" />
+    <Property Name="Excercisename" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Benefits" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSGym">
+    <Key>
+      <PropertyRef Name="GymID" />
+    </Key>
+    <Property Name="GymID" Type="Int64" Nullable="false" />
+    <Property Name="Gym_name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Venue" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Pin" Type="Int64" />
+    <Property Name="ContactNo" Type="Int64" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Addedby" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSInterval">
+    <Key>
+      <PropertyRef Name="IntervalID" />
+    </Key>
+    <Property Name="IntervalID" Type="Int64" Nullable="false" />
+    <Property Name="IntervalName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddedDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSInvoice">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="Int64" Nullable="false" />
+    <Property Name="InvoiceID" Type="Int64" Nullable="false" />
+    <Property Name="MemberID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="InvoiceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InvoiceTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="FName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Lname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MobileNumber" Type="Int64" />
+    <Property Name="PackageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PackageStartDate" Type="DateTime" Precision="3" />
+    <Property Name="packageEndDate" Type="DateTime" Precision="3" />
+    <Property Name="PaidAmount" Type="Int32" />
+    <Property Name="BalanceAmount" Type="Int32" />
+    <Property Name="ModeOfPayment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BankName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ChqueNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AdditionalDiscountApplied" Type="Boolean" />
+    <Property Name="DiscountInPercentage" Type="Int32" />
+    <Property Name="DiscountInAmount" Type="Int32" />
+    <Property Name="InvoiceBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSMember">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="Int64" Nullable="false" />
+    <Property Name="GymID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EnquiryID" Type="Int64" />
+    <Property Name="PhotoURL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MemberFname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberMname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberLname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberGender" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="MarritalStatus" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pincode" Type="Int64" />
+    <Property Name="MemPhotoURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberEmailID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MobileNo" Type="Int64" />
+    <Property Name="AlternateNumber" Type="Int64" />
+    <Property Name="ShiftTimeToAttend" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactRelation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactNumber" Type="Int64" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+    <Property Name="SelectedService" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SelectedPackages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="height" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Weight" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BMI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Neck" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Chest" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpperArm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Waist" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LowerAbdomen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Hips" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Thigh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Calf" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WHR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSPackage">
+    <Key>
+      <PropertyRef Name="PackageID" />
+    </Key>
+    <Property Name="PackageID" Type="Int64" Nullable="false" />
+    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GymID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PackageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SelectedServices" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TaxableOrnot" Type="Boolean" />
+    <Property Name="Discount" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="0" />
+    <Property Name="ValidTill" Type="DateTime" Precision="0" />
+    <Property Name="ApprovalStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AprovedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedDate" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AprovalComment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSRegime">
+    <Key>
+      <PropertyRef Name="RegimeID" />
+    </Key>
+    <Property Name="RegimeID" Type="Int64" Nullable="false" />
+    <Property Name="RegimeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSService">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="Int64" Nullable="false" />
+    <Property Name="ServiceName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Taxable" Type="Boolean" Nullable="false" />
+    <Property Name="dailyRate" Type="Int32" Nullable="false" />
+    <Property Name="weeklyrate" Type="Int32" Nullable="false" />
+    <Property Name="FourthnightlyRate" Type="Int32" Nullable="false" />
+    <Property Name="MonthlyRate" Type="Int32" Nullable="false" />
+    <Property Name="QuarterkyRate" Type="Int32" Nullable="false" />
+    <Property Name="YearlyRate" Type="Int32" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AprovedBy" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AprovedDate" Type="DateTime" Precision="0" />
+    <Property Name="AprovalComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceAvailableDays" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceDurationInMinuets" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GMSServiceTax">
+    <Key>
+      <PropertyRef Name="ServiceTaxID" />
+    </Key>
+    <Property Name="ServiceTaxID" Type="Int64" Nullable="false" />
+    <Property Name="serviceID" Type="Int64" Nullable="false" />
+    <Property Name="ServiceTaxName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Percentage" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AddedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="GMSSlotsBooking">
+    <Key>
+      <PropertyRef Name="SlotID" />
+    </Key>
+    <Property Name="SlotID" Type="Int64" Nullable="false" />
+    <Property Name="EnquiryID" Type="Int64" />
+    <Property Name="Fname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Mname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Lname" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ServiceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Selectedslot" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SelectedslotDate" Type="DateTime" Precision="0" />
+    <Property Name="SelectedslotTrainer" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BookingStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BookingDate" Type="DateTime" Precision="0" />
+    <Property Name="BookedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSTrainer">
+    <Key>
+      <PropertyRef Name="TrainerID" />
+    </Key>
+    <Property Name="GymID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TrainerID" Type="Int64" Nullable="false" />
+    <Property Name="TrainerFname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TrainerMnane" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TrainerLname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="MarritalStatus" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pincode" Type="Int64" />
+    <Property Name="PhotoURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmailID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AlternateMobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ShiftTimings" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmergencyContactRelation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TrainerRole" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AttachedDocuments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="JoinedAs" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PreviousDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalExperience" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReasontoLeftPrevJob" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ResignDate" Type="DateTime" Precision="3" />
+    <Property Name="ReasontoResign" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TrainerStatus" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GMSTrainerAvailability">
+    <Key>
+      <PropertyRef Name="AvailabilityID" />
+    </Key>
+    <Property Name="AvailabilityID" Type="Int64" Nullable="false" />
+    <Property Name="TrainerID" Type="Int64" Nullable="false" />
+    <Property Name="AvailableforService" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="starttime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Endtime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="break1start" Type="Time" Precision="7" />
+    <Property Name="break1End" Type="Time" Precision="7" />
+    <Property Name="break2start" Type="Time" Precision="7" />
+    <Property Name="break2End" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityType Name="GMSWorkout">
+    <Key>
+      <PropertyRef Name="WorkoutID" />
+    </Key>
+    <Property Name="WorkoutID" Type="Int64" Nullable="false" />
+    <Property Name="MemberID" Type="Int64" Nullable="false" />
+    <Property Name="Day" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Exercise" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sets" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Reps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GMSDiet">
+    <Key>
+      <PropertyRef Name="DietID" />
+      <PropertyRef Name="GymID" />
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="Days" />
+      <PropertyRef Name="Food" />
+    </Key>
+    <Property Name="DietID" Type="Int64" Nullable="false" />
+    <Property Name="GymID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BranchID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NotallowedFoods" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Days" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Food" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quantity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityContainer Name="GymEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GMSDays" EntityType="Self.GMSDay" />
+    <EntitySet Name="GMSDietItems" EntityType="Self.GMSDietItem" />
+    <EntitySet Name="GMSEnquiries" EntityType="Self.GMSEnquiry" />
+    <EntitySet Name="GMSEvents" EntityType="Self.GMSEvent" />
+    <EntitySet Name="GMSExercises" EntityType="Self.GMSExercis" />
+    <EntitySet Name="GMSGyms" EntityType="Self.GMSGym" />
+    <EntitySet Name="GMSIntervals" EntityType="Self.GMSInterval" />
+    <EntitySet Name="GMSInvoices" EntityType="Self.GMSInvoice" />
+    <EntitySet Name="GMSMembers" EntityType="Self.GMSMember" />
+    <EntitySet Name="GMSPackages" EntityType="Self.GMSPackage" />
+    <EntitySet Name="GMSRegimes" EntityType="Self.GMSRegime" />
+    <EntitySet Name="GMSServices" EntityType="Self.GMSService" />
+    <EntitySet Name="GMSServiceTaxes" EntityType="Self.GMSServiceTax" />
+    <EntitySet Name="GMSSlotsBookings" EntityType="Self.GMSSlotsBooking" />
+    <EntitySet Name="GMSTrainers" EntityType="Self.GMSTrainer" />
+    <EntitySet Name="GMSTrainerAvailabilities" EntityType="Self.GMSTrainerAvailability" />
+    <EntitySet Name="GMSWorkouts" EntityType="Self.GMSWorkout" />
+    <EntitySet Name="GMSDiets" EntityType="Self.GMSDiet" />
+  </EntityContainer>
+</Schema>

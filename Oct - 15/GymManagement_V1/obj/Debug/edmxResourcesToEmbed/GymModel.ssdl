@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GymModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EXE-GYM.EXE-GYM.GMSBranch' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="GMSBranch">
+          <Property Name="GymID" Type="bigint" />
+          <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+          <Property Name="BranchName" Type="nvarchar(max)" />
+          <Property Name="BranchVenue" Type="nvarchar(max)" />
+          <Property Name="BranchCity" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="GMSDays">
+    <Key>
+      <PropertyRef Name="DayId" />
+    </Key>
+    <Property Name="DayId" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'EXE-GYM.EXE-GYM.GMSDiet' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GMSDiet">
+    <Key>
+      <PropertyRef Name="DietID" />
+      <PropertyRef Name="GymID" />
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="Days" />
+      <PropertyRef Name="Food" />
+    </Key>
+    <Property Name="DietID" Type="bigint" Nullable="false" />
+    <Property Name="GymID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NotallowedFoods" Type="nvarchar(max)" />
+    <Property Name="Days" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Food" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="50" />
+    <Property Name="Time" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="GMSDietItems">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="bigint" Nullable="false" />
+    <Property Name="Foodname" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="FoodType" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Calories" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GMSEnquiry">
+    <Key>
+      <PropertyRef Name="InquiryID" />
+    </Key>
+    <Property Name="InquiryID" Type="bigint" Nullable="false" />
+    <Property Name="Prefix" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Fname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Lname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mname" Type="nvarchar(max)" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="MobileNumber" Type="nvarchar(max)" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MarritalStatus" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pincode" Type="bigint" />
+    <Property Name="SourceOfInquiry" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InterestedServices" Type="nvarchar(max)" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="Followup1Date" Type="datetime" />
+    <Property Name="Followup1By" Type="nvarchar" MaxLength="50" />
+    <Property Name="Followup1RemiderDate" Type="datetime" />
+    <Property Name="Followup1Status" Type="nvarchar(max)" />
+    <Property Name="Followup2Date" Type="datetime" />
+    <Property Name="Followup2By" Type="nvarchar" MaxLength="50" />
+    <Property Name="Followup2RemiderDate" Type="datetime" />
+    <Property Name="Followup2Status" Type="nvarchar(max)" />
+    <Property Name="Followup3Date" Type="datetime" />
+    <Property Name="Followup3By" Type="nvarchar" MaxLength="50" />
+    <Property Name="Followup3RemiderDate" Type="datetime" />
+    <Property Name="Followup3Status" Type="varchar" MaxLength="50" />
+    <Property Name="EnquiryDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GMSEvent">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="GymID" Type="nvarchar" MaxLength="50" />
+    <Property Name="EventID" Type="bigint" Nullable="false" />
+    <Property Name="EventName" Type="nchar" MaxLength="10" />
+    <Property Name="EventPhoto" Type="nvarchar(max)" />
+    <Property Name="EventDate" Type="date" />
+    <Property Name="EventVenue" Type="nvarchar(max)" />
+    <Property Name="EventCity" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="GMSExercises">
+    <Key>
+      <PropertyRef Name="ExerciseID" />
+    </Key>
+    <Property Name="ExerciseID" Type="bigint" Nullable="false" />
+    <Property Name="Excercisename" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Benefits" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GMSGym">
+    <Key>
+      <PropertyRef Name="GymID" />
+    </Key>
+    <Property Name="GymID" Type="bigint" Nullable="false" />
+    <Property Name="Gym_name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Venue" Type="nvarchar" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" MaxLength="200" />
+    <Property Name="Pin" Type="bigint" />
+    <Property Name="ContactNo" Type="bigint" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="Addedby" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="GMSIntervals">
+    <Key>
+      <PropertyRef Name="IntervalID" />
+    </Key>
+    <Property Name="IntervalID" Type="bigint" Nullable="false" />
+    <Property Name="IntervalName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AddedDate" Type="date" />
+  </EntityType>
+  <EntityType Name="GMSInvoice">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="bigint" Nullable="false" />
+    <Property Name="InvoiceID" Type="bigint" Nullable="false" />
+    <Property Name="MemberID" Type="nchar" MaxLength="10" />
+    <Property Name="InvoiceDate" Type="date" Nullable="false" />
+    <Property Name="InvoiceType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="FName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MobileNumber" Type="bigint" />
+    <Property Name="PackageName" Type="nvarchar(max)" />
+    <Property Name="PackageStartDate" Type="datetime" />
+    <Property Name="packageEndDate" Type="datetime" />
+    <Property Name="PaidAmount" Type="int" />
+    <Property Name="BalanceAmount" Type="int" />
+    <Property Name="ModeOfPayment" Type="nvarchar" MaxLength="50" />
+    <Property Name="CardNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ChqueNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="AdditionalDiscountApplied" Type="bit" />
+    <Property Name="DiscountInPercentage" Type="int" />
+    <Property Name="DiscountInAmount" Type="int" />
+    <Property Name="InvoiceBy" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GMSMember">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="bigint" Nullable="false" />
+    <Property Name="GymID" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="EnquiryID" Type="bigint" />
+    <Property Name="PhotoURL" Type="nvarchar" MaxLength="50" />
+    <Property Name="MemberFname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MemberMname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MemberLname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MemberGender" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MarritalStatus" Type="nchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pincode" Type="bigint" />
+    <Property Name="MemPhotoURL" Type="nvarchar(max)" />
+    <Property Name="MemberEmailID" Type="nvarchar" MaxLength="200" />
+    <Property Name="MobileNo" Type="bigint" />
+    <Property Name="AlternateNumber" Type="bigint" />
+    <Property Name="ShiftTimeToAttend" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactName" Type="nvarchar(max)" />
+    <Property Name="EmergencyContactRelation" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactNumber" Type="bigint" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="SelectedService" Type="nvarchar(max)" />
+    <Property Name="SelectedPackages" Type="nvarchar(max)" />
+    <Property Name="height" Type="nvarchar" MaxLength="50" />
+    <Property Name="Weight" Type="nvarchar" MaxLength="50" />
+    <Property Name="BMI" Type="nvarchar" MaxLength="50" />
+    <Property Name="Neck" Type="nvarchar" MaxLength="50" />
+    <Property Name="Chest" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpperArm" Type="nvarchar" MaxLength="50" />
+    <Property Name="Waist" Type="nvarchar" MaxLength="50" />
+    <Property Name="LowerAbdomen" Type="nvarchar" MaxLength="50" />
+    <Property Name="Hips" Type="nvarchar" MaxLength="50" />
+    <Property Name="Thigh" Type="nvarchar" MaxLength="50" />
+    <Property Name="Calf" Type="nvarchar" MaxLength="50" />
+    <Property Name="WHR" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GMSPackage">
+    <Key>
+      <PropertyRef Name="PackageID" />
+    </Key>
+    <Property Name="PackageID" Type="bigint" Nullable="false" />
+    <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="GymID" Type="nvarchar" MaxLength="50" />
+    <Property Name="PackageName" Type="nvarchar(max)" />
+    <Property Name="SelectedServices" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaxableOrnot" Type="bit" />
+    <Property Name="Discount" Type="int" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="ValidTill" Type="date" />
+    <Property Name="ApprovalStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="AprovedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApprovedDate" Type="nvarchar" MaxLength="100" />
+    <Property Name="AprovalComment" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EXE-GYM.EXE-GYM.GMSPhysicalMeasurement' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="GMSPhysicalMeasurement">
+          <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+          <Property Name="GYMID" Type="nvarchar" MaxLength="50" />
+          <Property Name="MemberID" Type="bigint" />
+          <Property Name="MemberName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Height" Type="nvarchar" MaxLength="50" />
+          <Property Name="Weight" Type="nvarchar" MaxLength="50" />
+          <Property Name="BMI" Type="nvarchar" MaxLength="50" />
+          <Property Name="Neck" Type="nvarchar" MaxLength="50" />
+          <Property Name="Chest" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpperArm" Type="nvarchar" MaxLength="50" />
+          <Property Name="Waist" Type="nvarchar" MaxLength="50" />
+          <Property Name="LowerAbdomen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Hips" Type="nvarchar" MaxLength="50" />
+          <Property Name="Thigh" Type="nvarchar" MaxLength="50" />
+          <Property Name="Calf" Type="nvarchar" MaxLength="50" />
+          <Property Name="WHR" Type="nvarchar" MaxLength="50" />
+          <Property Name="AddedBy" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="GMSRegimes">
+    <Key>
+      <PropertyRef Name="RegimeID" />
+    </Key>
+    <Property Name="RegimeID" Type="bigint" Nullable="false" />
+    <Property Name="RegimeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="GMSServices">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="bigint" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Taxable" Type="bit" Nullable="false" />
+    <Property Name="dailyRate" Type="int" Nullable="false" />
+    <Property Name="weeklyrate" Type="int" Nullable="false" />
+    <Property Name="FourthnightlyRate" Type="int" Nullable="false" />
+    <Property Name="MonthlyRate" Type="int" Nullable="false" />
+    <Property Name="QuarterkyRate" Type="int" Nullable="false" />
+    <Property Name="YearlyRate" Type="int" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="nchar" MaxLength="10" />
+    <Property Name="AprovedBy" Type="nchar" MaxLength="10" />
+    <Property Name="AprovedDate" Type="date" />
+    <Property Name="AprovalComment" Type="nvarchar(max)" />
+    <Property Name="ServiceAvailableDays" Type="nvarchar(max)" />
+    <Property Name="ServiceDurationInMinuets" Type="int" />
+  </EntityType>
+  <EntityType Name="GMSServiceTax">
+    <Key>
+      <PropertyRef Name="ServiceTaxID" />
+    </Key>
+    <Property Name="ServiceTaxID" Type="bigint" Nullable="false" />
+    <Property Name="serviceID" Type="bigint" Nullable="false" />
+    <Property Name="ServiceTaxName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percentage" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="AddedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date" Type="date" />
+  </EntityType>
+  <EntityType Name="GMSSlotsBooking">
+    <Key>
+      <PropertyRef Name="SlotID" />
+    </Key>
+    <Property Name="SlotID" Type="bigint" Nullable="false" />
+    <Property Name="EnquiryID" Type="bigint" />
+    <Property Name="Fname" Type="nchar" MaxLength="10" />
+    <Property Name="Mname" Type="nchar" MaxLength="10" />
+    <Property Name="Lname" Type="nchar" MaxLength="10" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Selectedslot" Type="nchar" MaxLength="10" />
+    <Property Name="SelectedslotDate" Type="date" />
+    <Property Name="SelectedslotTrainer" Type="nvarchar" MaxLength="200" />
+    <Property Name="BookingStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="BookingDate" Type="date" />
+    <Property Name="BookedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GMSTrainer">
+    <Key>
+      <PropertyRef Name="TrainerID" />
+    </Key>
+    <Property Name="GymID" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchID" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrainerID" Type="bigint" Nullable="false" />
+    <Property Name="TrainerFname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TrainerMnane" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TrainerLname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Gender" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="MarritalStatus" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Pincode" Type="bigint" />
+    <Property Name="PhotoURL" Type="nvarchar(max)" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="200" />
+    <Property Name="Mobile" Type="nvarchar(max)" />
+    <Property Name="AlternateMobile" Type="nvarchar(max)" />
+    <Property Name="ShiftTimings" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmergencyContactRelation" Type="nvarchar" MaxLength="50" />
+    <Property Name="BirthDate" Type="date" Nullable="false" />
+    <Property Name="TrainerRole" Type="nvarchar(max)" />
+    <Property Name="AttachedDocuments" Type="nvarchar(max)" />
+    <Property Name="JoinedAs" Type="nvarchar" MaxLength="50" />
+    <Property Name="PreviousDesignation" Type="nvarchar" MaxLength="50" />
+    <Property Name="TotalExperience" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReasontoLeftPrevJob" Type="nvarchar(max)" />
+    <Property Name="ResignDate" Type="datetime" />
+    <Property Name="ReasontoResign" Type="nvarchar(max)" />
+    <Property Name="TrainerStatus" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GMSTrainerAvailability">
+    <Key>
+      <PropertyRef Name="AvailabilityID" />
+    </Key>
+    <Property Name="AvailabilityID" Type="bigint" Nullable="false" />
+    <Property Name="TrainerID" Type="bigint" Nullable="false" />
+    <Property Name="AvailableforService" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="starttime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Endtime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="break1start" Type="time" Precision="7" />
+    <Property Name="break1End" Type="time" Precision="7" />
+    <Property Name="break2start" Type="time" Precision="7" />
+    <Property Name="break2End" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="GMSWorkout">
+    <Key>
+      <PropertyRef Name="WorkoutID" />
+    </Key>
+    <Property Name="WorkoutID" Type="bigint" Nullable="false" />
+    <Property Name="MemberID" Type="bigint" Nullable="false" />
+    <Property Name="Day" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Exercise" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sets" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Reps" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="GymModelStoreContainer">
+    <EntitySet Name="GMSDays" EntityType="Self.GMSDays" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSDietItems" EntityType="Self.GMSDietItems" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSEnquiry" EntityType="Self.GMSEnquiry" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSEvent" EntityType="Self.GMSEvent" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSExercises" EntityType="Self.GMSExercises" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSGym" EntityType="Self.GMSGym" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSIntervals" EntityType="Self.GMSIntervals" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSInvoice" EntityType="Self.GMSInvoice" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSMember" EntityType="Self.GMSMember" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSPackage" EntityType="Self.GMSPackage" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSRegimes" EntityType="Self.GMSRegimes" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSServices" EntityType="Self.GMSServices" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSServiceTax" EntityType="Self.GMSServiceTax" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSSlotsBooking" EntityType="Self.GMSSlotsBooking" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSTrainer" EntityType="Self.GMSTrainer" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSTrainerAvailability" EntityType="Self.GMSTrainerAvailability" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSWorkout" EntityType="Self.GMSWorkout" Schema="EXE-GYM" store:Type="Tables" />
+    <EntitySet Name="GMSDiet" EntityType="Self.GMSDiet" store:Type="Tables" store:Schema="EXE-GYM">
+      <DefiningQuery>SELECT 
+    [GMSDiet].[DietID] AS [DietID], 
+    [GMSDiet].[GymID] AS [GymID], 
+    [GMSDiet].[BranchID] AS [BranchID], 
+    [GMSDiet].[NotallowedFoods] AS [NotallowedFoods], 
+    [GMSDiet].[Days] AS [Days], 
+    [GMSDiet].[Type] AS [Type], 
+    [GMSDiet].[Food] AS [Food], 
+    [GMSDiet].[Unit] AS [Unit], 
+    [GMSDiet].[Quantity] AS [Quantity], 
+    [GMSDiet].[Time] AS [Time]
+    FROM [EXE-GYM].[GMSDiet] AS [GMSDiet]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

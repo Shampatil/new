@@ -1,0 +1,145 @@
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 10px !important;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #3193d4;
+    /*display: inline-block;*/
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3193d4;
+    /*display: inline-block;*/
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin-left: 10px !important;
+    line-height: 160%;
+    margin: 5px;
+}
+.font-14pt{
+    font-size:14pt;
+}
+.line-height-350pct {
+    line-height: 350% !important;
+}
+
+th {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tblBorder {
+    border: 1px solid black;
+}
+
+div {
+    page-break-inside: avoid;
+}
+
+.comment {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border-width: 0;
+    /*color: #999;*/
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-break: break-word;
+    white-space: pre-line;
+    font-size: 12px;
+    margin: 0px;
+    line-height: 150%;
+}
+
+.printPediatricDocPageBase {
+    width: 9.5in;
+    /*height: auto;*/
+    margin: 0 auto;
+    padding: 0;
+    /*padding-left: 5px;*/
+    text-align: left;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.width100pct {
+    width: 100%;
+}
+
+.paddingLeft15px {
+    padding-left: 15px;  
+}
+
+.printPediatricDocHeader {
+    padding-bottom: 10px;
+    height: 175px;
+    width: 9.5in;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+.printPediatricDocFooter {
+    display: none;
+}
+.table-padding td
+{
+    padding:10px;
+}
+.dataTable td {
+    margin: 0;
+}
+
+@media print {
+    .printPediatricDocFooter {
+        display: block;
+        height: 65px;
+        clear: both;
+        border-top: 1px solid;
+        width: 9.5in;
+        padding-top: 10px;
+        margin: 0 auto;
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box;
+        -ms-box-sizing: border-box;
+    }
+    @page {      
+        margin: .25in !important;
+        size: 8.5in 11in; /* width height */
+        counter-increment:page;
+    }
+}
+

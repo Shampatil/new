@@ -1,0 +1,399 @@
+﻿<form style="background-color:white" name="newBalancePaymentController" ng-app="gymManagementApp" ng-controller="newBalancePaymentController" ng-submit="addBalancepayment()">
+
+        <!--<input type="text" ng-model="careersAvailableController">-->
+        <div class="col-md-12">
+            <p></p>
+        </div>
+        <div>
+            <br />
+            <div>
+                <h1 class="header light gray3 fancy"><span class="colored">Balance Payment</span></h1>
+
+            </div>
+        
+            <br />
+
+
+        <div class="col-md-12"><p></p></div>
+
+            <div class="">
+                <div class="panel-custom-horrible-red">
+                    <div class="panel-heading"><label style="font-size:150%;color: #402063;  ">Search Records</label> </div>
+                    <div style="overflow-x:auto;height:250px">
+                        <table class="table table-striped table-bordered table-responsive" id="transactionSearch" style="height:100px" arrow-selector>
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><input placeholder="Transaction ID" class="form-control" ng-model="search.TransactionID"></th>
+                                    <!--<th></th>-->
+                                    <th><input style="font-size:12px" placeholder="MemberID" class="form-control" ng-model="search.MemberID"></th>
+                                    <th><input style="font-size:12px" placeholder="First Name" class="form-control" ng-model="search.FName"></th>
+                                    <th><input style="font-size:12px" placeholder="Middle name ID" class="form-control" ng-model="search.Mname"></th>
+                                    <th colspan="2"><input style="font-size:12px" placeholder="Last name ID" class="form-control" ng-model="search.Lname"></th>
+
+                                    <th colspan="2"><input style="font-size:12px" placeholder="Mobile Number" class="form-control" ng-model="search.MobileNumber"></th>
+                                    <th colspan="2"><input style="font-size:12px" placeholder="Billing Amount" class="form-control" ng-model="search.BillingAmount"></th>
+                                    <th colspan="2"><input style="font-size:12px" placeholder="Balance Amount" class="form-control" ng-model="search.BalanceAmount"></th>
+                                </tr>
+                            </thead>
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <!--<th>Select Record</th>-->
+                                    <!--<th style="width: 50px;">Id</th>-->
+                                    <th>TransactionID</th>
+                                    <th>MemberID</th>
+                                    <th>InvoiceDate</th>
+                                    <th>Fname</th>
+                                    <th>Mname</th>
+                                    <th>Lname</th>
+                                    <th>Mobile Number</th>
+                                    <th>Invoice Type</th>
+                                    <th>Invoice Time</th>
+                                    <th>Billing Amount</th>
+                                    <th>Paid Amount</th>
+                                    <th>Balance Amount</th>
+
+                                    <!--<th>StartDate</th>
+                            <th>Validity_In_Days</th>
+                            <th>Balance_Amount</th>-->
+
+                                </tr>
+                            </thead>
+                            <tr ng-repeat="x in Newinvoice | filter: search:strict" ng-click=SelectTransaction(x.TransactionID,x.MemberID,x.BillingAmount,x.TotalPaidRuppes)>
+                                <!--<td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)"><button class="btn btn-primary" align="center" >Select</button></td>-->
+                                <!--<td>{{ x.ID }}</td>-->
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.TransactionID  }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.MemberID }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.InvoiceDate }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.FName }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.Mname }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.Lname }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.MobileNumber }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.InvoiceType }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.InvoiceTime }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.BillingAmount }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{ x.TotalPaidRuppes }}</td>
+                                <td ng-if="x.BillingAmount > gettotalpaid(x.TransactionID)">{{(x.BillingAmount)-(gettotalpaid(x.TransactionID))}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p></p><br />
+                </div>
+
+                <div class="panel-custom-horrible-red" ng-if="BalancePaymentTransactionID!=null">
+                    <div class="panel-heading"><label style="font-size:150%;color: #402063;  ">Selected Records Transactions Details</label> </div>
+                    <table class="table table-bordered table-responsive">
+                        <thead class="thead-inverse">
+                            <tr style="background-color:#D2B4E4">
+                                <!--<th width="10%">GYMID</th>
+                        <th width="10%">BranchID</th>-->
+
+                                <th width="10%">Id</th>
+                                <th width="10%">Invoice Id</th>
+                                <th width="10%">Transaction Id</th>
+                                <th width="10%">Member Id</th>
+
+                                <th width="10%">BillingAmount</th>
+                                <th width="10%">Paid</th>
+                                <th width="10%">Balance</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr ng-repeat="InvTransaction in invoicetransaction">
+                                <!--<td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.GYMID}}</td>
+                        <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.BranchID}}</td>-->
+
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.ID}}</td>
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.InvoiceID}}</td>
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.TransactionID}}</td>
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.MemberId}}</td>
+
+
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.BillingAmount}}</td>
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.Paid}}</td>
+                                <td ng-if="InvTransaction.TransactionID == BalancePaymentTransactionID">{{InvTransaction.Balance}}</td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="container">
+                        <p></p><br />
+                </div>
+
+                <div class="panel-custom-horrible-red" ng-if="BalancePaymentTransactionID!=null">
+                    <div class="panel-heading"><label style="font-size:150%;color: #402063;  ">Selected Records Details</label> </div>
+                    <div style="overflow-x:auto;">
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>Packagename</th>
+                                    <th>Base Price</th>
+                                    <th>Service Level Tax</th>
+                                    <th>Discount</th>
+                                    <th>Included Services</th>
+                                    <th>Included Taxes</th>
+                                </tr>
+                            </thead>
+                            <tr ng-repeat="package in invoicepackages2">
+                                <td>{{package.Packagename}}</td>
+                                <td>{{package.IncludedService}}</td>
+                                <td>{{package.IncludedServiceLevelTaxAmount}}</td>
+                                <td>{{package.DiscountInAmount}}</td>
+                                <td>
+                                    <div class="panel-custom-horrible-red">
+                                        <div class="panel-heading"><label style="font-size:100%;color: #402063;  ">{{package.Packagename}} Package Included Services Details</label> </div>
+                                        <table class="table table-striped table-bordered table-responsive">
+                                            <thead class="thead-inverse">
+                                                <tr>
+                                                    <!--<th style="width: 50px;">TransactionID</th>-->
+                                                    <!--<th>Packagename</th>-->
+                                                    <th>Service</th>
+                                                    <th>Price</th>
+                                                    <!--<th>Discount In Percentage</th>-->
+                                                    <th>Discount</th>
+                                                    <th>Tax</th>
+                                                    <th>Included Service Taxes</th>
+                                                </tr>
+                                            </thead>
+                                            <tr ng-repeat="service in invoiceServices | filter:Service">
+                                                <!--<td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.TransactionID}}</td>-->
+                                                <!--<td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.Packagename}}</td>-->
+                                                <td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.Service}}</td>
+                                                <td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.Price}}</td>
+                                                <!--<td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.DiscountInPercentage}}</td>-->
+                                                <td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.DiscountInAmount}}</td>
+                                                <td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">{{service.TotalTaxInAmount}}</td>
+                                                <td ng-if="package.TransactionID == service.TransactionID && package.Packagename==service.Packagename && service.TransactionID != null">
+
+                                                    <div class="panel-custom-horrible-red">
+                                                        <div class="panel-heading"><label style="font-size:100%;color: #402063;  ">{{service.Service}} Serivce Tax Details</label> </div>
+                                                        <table class="table table-striped table-bordered table-responsive">
+                                                            <thead class="thead-inverse">
+                                                                <tr>
+                                                                    <th>Tax</th>
+                                                                    <th>Rate</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tr ng-repeat="taxes in invoicetaxes">
+                                                                <td ng-if="taxes.TransactionID == service.TransactionID && taxes.Taxlevel == 'Service level Tax' && taxes.PackageOrServiceName.indexOf(service.Packagename) > -1 && taxes.PackageOrServiceName.indexOf(service.Service) > -1">{{taxes.TaxName}}</td>
+                                                                <td ng-if="taxes.TransactionID == service.TransactionID && taxes.Taxlevel == 'Service level Tax' && taxes.PackageOrServiceName.indexOf(service.Packagename) > -1 && taxes.PackageOrServiceName.indexOf(service.Service) > -1">{{taxes.Taxpercentage}}</td>
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>
+                                    <table class="table table-striped table-bordered table-responsive">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>Tax</th>
+                                                <th>Rate</th>
+                                            </tr>
+                                        </thead>
+                                        <tr ng-repeat="packagetaxes in invoicetaxes">
+                                            <td ng-if="packagetaxes.TransactionID == package.TransactionID && packagetaxes.PackageOrServiceName == package.Packagename && packagetaxes.TaxName!=null && packagetaxes.Taxpercentage!=null">{{packagetaxes.TaxName}}</td>
+                                            <td ng-if="packagetaxes.TransactionID == package.TransactionID && packagetaxes.PackageOrServiceName == package.Packagename && packagetaxes.TaxName!=null && packagetaxes.Taxpercentage!=null">{{packagetaxes.Taxpercentage}}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="panel-custom-horrible-red" ng-if="BalancePaymentTransactionID!=null">
+                    <div class="panel-heading"><label style="font-size:150%;color: #402063;  ">Payment Details</label> </div>
+                    <div class="container">
+                        <div class="col-md-12">
+                            <p></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Transaction ID:</label>
+                            </div>
+
+                            <div class="col-md-4">
+
+
+                                <input class="form-control" id="TransactionIDBalancePayment" name="TransactionIDBalancePayment" ng-model="TransactionIDBalancePayment" ng-value=BalancePaymentTransactionID readonly />
+
+                            </div>
+
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Date:</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="InvoiceDate" name="InvoiceDate" value={{day1}} readonly />
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <br />
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Billing Amount:</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" name="balancePaymentBillingamount" title="Enter MRP" id="balancePaymentBillingamount" ng-model="balancePaymentBillingamount" readonly>
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Total Paid :</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="paidrupeestotal" ng-model="paidrupeestotal" readonly /><!--id="BalancePaymentTotalPaid" name="BalancePaymentTotalPaid"-->
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <br />
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Pre Balance Payment:</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="PrebalancePaid" ng-model="PrebalancePaid" ng-value="{{balancePaymentBillingamount-paidrupeestotal}}" readonly>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Paying Amount:</label>
+                            </div>
+                            <div class="col-md-4">
+
+                                <input class="form-control" id="payingAmount1" ng-model="payingAmount1" type="number" ng-change="balancePaymentDetails(payingAmount1,PrebalancePaid)" ng-minlength="3" ng-maxlength="10" required>
+                                <span class="help-block" ng-if="payingAmount1==null" style="color:red">Mandatory Field (Numbers only)</span>
+                                <span class="help-block" ng-if="payingAmount1!=null && payingAmount1>999999999" style="color:red">Only 10 Digits Amount can be paid</span>
+                                <span class="help-block" ng-if="payingAmount1!=null && payingAmount1<100" style="color:red">Minimum 100 Rupees need to complete Transaction</span>
+                            </div>
+
+                            <div class="col-md-12">
+                                <br />
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Post Balance Payment:</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" ng-model="PostbalancePaid" readonly>
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Select payment Method :</label>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group" ng-class="{'has-error': newBalancePaymentController.followup_Status.$invalid}">
+                                    <select name="PaymentMethod" class="form-control" id="PaymentMethod" ng-model="PaymentMethod" ng-options="service.ServiceName as service.ServiceName for service in services" required></select>
+                                    <span class="help-block" ng-show="newBalancePaymentController.PaymentMethod.$error.required" style="color:red">Mandetory Field</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cheque" class="col-md-12" ng-if="PaymentMethod=='Cheque'">
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Bank Name :</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="BankName" placeholder="Bank Name" class="form-control">
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Cheque Number</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="ChequeNumber" placeholder="Cheque Number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12" ng-if="PaymentMethod=='Cheque'">
+                            <br />
+                        </div>
+                        <div id="debitcard" class="col-md-12" ng-if="PaymentMethod=='Debit Card'">
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Card Number :</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="CardNumber" placeholder="Card Number" class="form-control">
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Bank Name</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="BankName" placeholder="Bank Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12" ng-if="PaymentMethod=='Debit Card'">
+                            <br />
+                        </div>
+                        <div id="creditcard" class="col-md-12" ng-if="PaymentMethod=='Credit Card'">
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Card Number :</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="CardNumber" placeholder="Card Number" class="form-control">
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Bank Name</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="lname" ng-model="BankName" placeholder="Bank Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12" ng-if="PaymentMethod=='Credit Card'">
+                            <br />
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Authorised By:</label>
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" name="authorisedby" placeholder="Authorised person name" title="Authorised person name" ng-model="authorisedby" readonly>
+                            </div>
+                            <div class="col-md-2">
+                                <label style="padding-top:8px">Remark:</label>
+                            </div>
+
+                            <div class="col-md-4">
+                                <input class="form-control" name="remarks" placeholder="Enter Remarks" title="Enter Remarks" ng-model="remarks">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12"><p><p></p></div><br />
+                        <div class="col-md-12"><p></p></div>
+                        <div class="col-md-12"><p></p></div>
+                        <div align="center">
+                            <!--<button type="submit" class="btn btn-primary btn-lg" align="center" ng-click="submitted = true && newBalancePaymentController">Submit</button>-->
+                            <button type="submit" class="btn btn-primary btn-lg" align="center" ng-disabled="!newBalancePaymentController.$valid" ng-click="newBalancePaymentController">Submit</button>
+
+                            <!--<button id="lnkPrint" class="btn btn-primary btn-lg">Print </button>-->
+                            <button type="reset" class="btn btn-danger btn-lg" onclick="document.location.href = 'index.html#/dashboard/home';">Cancel</button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12"><p><p></p></div><br />
+                </div>
+                <!--{{invoice}}-->
+
+
+            </div>
+        </div>
+
+        <br /><br /><br /><br />
+
+    </form>
+
+
+

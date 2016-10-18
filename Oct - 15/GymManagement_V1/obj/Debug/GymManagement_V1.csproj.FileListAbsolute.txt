@@ -1,0 +1,531 @@
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+K:\Gym Development\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+K:\Gym Development\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+K:\Gym Development\26-05-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+K:\Gym Development\27-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\28-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\29-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\31-May-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\01-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\02-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\03-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\04-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\06-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\07-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\08-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of Final Enquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\09-June-2016 - Copy of carrierEnquiry\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\192.168.0.11\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\10-June-2016\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll.config
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\GymManagement_V1.pdb
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\EntityFramework.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\EntityFramework.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\EntityFramework.SqlServer.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\Newtonsoft.Json.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Net.Http.Formatting.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Http.WebHost.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Razor.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Deployment.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Webpages.Razor.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Helpers.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\System.Web.Mvc.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\bin\Microsoft.Web.Infrastructure.xml
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.dll
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.pdb
+\\datacentre\Master\Development\Sham Patil\Gym Managment\Development\11-june-2016 2\GymManagement_V1\GymManagement_V1\GymManagement_V1\obj\Debug\GymManagement_V1.csprojResolveAssemblyReference.cache

@@ -1,0 +1,410 @@
+﻿<!-------------------------------------------------------- Start of Enqury------------------------------------------------------------------------------------------
+    //@Package     :- Enquiry.html
+    //@Sub-Package :- Enquiry.html
+    //@Category    :- Controller
+    //@Link        :- http://planetfitnessindia.com/index.html#/dashboard/Enquiry
+    //@Since       :-
+    //@Filesource  :- \\datacentre\Master\Development\Sham Patil\Gym Managment\Development\16-june-2016\GymManagement_V1\GymManagement_V1\Views\dashboard\Enquiry.html
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="col-md-12">
+    <p>
+    </p>
+</div>
+<br />
+
+<form style="background-color:white" name="EnquiryController"  ng-app="gymManagementApp" ng-controller="EnquiryController" ng-submit="submitForm()" novalidate>
+    <!----------------------Starting of Heading Panel------------------------>
+      <div class="">
+          <h1 class="header light gray3 fancy"><span class="colored">Enquiry</span></h1>
+        </div><div class="col-md-12">
+    <p>
+    </p>
+</div>
+<br />
+    <!----------------------------------------------------------------------->
+
+
+    <!------------------------------------------------- Starting of Enquiry contain (body) --------------------------------------------->
+    <div class="">
+        <div class="panel-custom-horrible-red">
+            <div class="panel-heading">Enquiry  </div>
+            <div class="panel-body">
+                <div class="col-md-3">
+
+                    <div class="col-md-12">
+                        <p>
+                        </p>
+                    </div>
+                    <br />
+                    <div class="col-md-4">
+                        <label>Source of Enquiry</label>
+                        <div>
+                           
+                        </div>
+                    </div>
+                    <!-- Enquiry Source Dropdown -->
+                    <div class="col-md-8 ">
+                        <select class="form-control" id="enquirysource" name="proptype">
+                            <option ng-repeat="enq in EnquirySource">{{enq}}</option>
+                        </select>
+                    </div>
+                    <!----------------------------->
+                    <div class="col-md-12">
+                        <p></p><p></p><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+</div>
+
+
+        <div class="">
+                <div class="panel-custom-horrible-red">
+                    <div class="panel-heading"> Personal Details</div>
+
+                    <div class="panel-body">
+                        <div class="col-md-12">
+
+                            <div class="col-md-3">
+                                <div class="col-md-4">
+                                    <label style="padding-top:8px"><label style="color:red">*</label>First Name:</label>
+                                </div>
+                                <!-- First name -->
+                                <div class="col-md-8">
+                                    <div class="form-group" ng-class="{'has-error': EnquiryController.Fname.$invalid}">
+                                        <input class="form-control" name="Fname" placeholder="First Name" title="Enter first name" ng-model="Fname" ng-maxlength="50" ng-pattern="/^[a-zA-Z_ ]*$/" required>
+                                        <span class="help-block" ng-show="EnquiryController.Fname.$error.pattern" style="color:red">Number and Symbols are not allowed!</span>
+                                        <span class="help-block" ng-show="EnquiryController.Fname.$error.required" style="color:red">Mandatory Field</span>
+                                        <span class="help-block" ng-show="EnquiryController.Fname.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-md-4">
+                                    <label style="padding-top:8px">Middle Name:</label>
+                                </div>
+                                <!-- Middle Name -->
+                                <div class="col-md-8">
+                                    <div class="form-group" ng-class="{'has-error': EnquiryController.Mname.$invalid}">
+                                        <input class="form-control" name="Mname" placeholder="Middle Name" title="Enter Middle name" ng-model="Mname" ng-maxlength="50" ng-pattern="/^[a-zA-Z_ ]*$/">
+                                        <span class="help-block" ng-show="EnquiryController.Mname.$error.pattern" style="color:red">Number and Symbols are not allowed!</span>
+                                        <span class="help-block" ng-show="EnquiryController.Mname.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-md-4">
+                                    <label style="padding-top:8px"><label style="color:red">*</label> Last Name:</label>
+                                </div>
+                                <!-- Last Name -->
+                                <div class="col-md-8">
+                                    <div class="form-group" ng-class="{'has-error': EnquiryController.Lname.$invalid}">
+                                        <input class="form-control" name="Lname" placeholder="Last Name" title="Enter Last name" ng-model="Lname" ng-maxlength="50" ng-pattern="/^[a-zA-Z_ ]*$/" required>
+                                        <span class="help-block" ng-show="EnquiryController.Lname.$error.pattern" style="color:red">Number and Symbols are not allowed!</span>
+                                        <span class="help-block" ng-show="EnquiryController.Lname.$error.required" style="color:red">Mandatory Field</span>
+                                        <span class="help-block" ng-show="EnquiryController.Lname.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <p></p>
+                            </div>
+                            <br />
+
+                            <div class="col-md-12">
+                                <p>
+                                </p>
+                            </div>
+
+                           <div class="col-md-12 inline">
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Birth Date</label>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                            <div class="inner-addon left-addon">
+                                                <input name="datepick" ng-model="datepick" class="form-control" id="datepicker-example10" type="text">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </div>
+
+                                        <!--<div class="form-group">
+                                            <div class="icon-addon addon-md">
+                                                <input  class="form-control" jqdatepicker>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner-addon right-addon">
+                                            <i class="glyphicon glyphicon-calendar"></i>
+                                            <input type="text" class="form-control" placeholder="YYYY-MM-DD"  jqdatepicker/>
+                                        </div>-->
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Marrital Status</label>
+                                    </div>
+                                    <!-- Marrital Status Dropdown -->
+                                    <div class="col-md-8">
+                                        <select class="form-control" id="marritalstatus" name="proptype">
+                                            <option></option>
+                                            <option ng-repeat="ms in MarritalStatus">{{ms}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Gender</label>
+                                    </div>
+                                    <!-- Gender Dropdown -->
+                                    <div class="col-md-8">
+                                        <select class="form-control" id="gender" name="proptype">
+                                            <option title="Select Your Gender" ng-repeat="gen in Gender">{{gen}}</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-12">
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                    <div class="col-md-12">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            <br />
+            </div>
+            <div class="">
+                <div class="panel-custom-horrible-red">
+                    <div class="panel-heading">Contact Details</div>
+                    <br />
+                    <div class="table-responsive">
+                        <div class="col-md-12 ">
+                            <div class="col-md-12">
+                                <p>
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-md-4">
+                                    <label padding-top:8px"><label style="color:red">*</label>Mobile Number</label>
+                                </div>
+                                <!-- Mobile Number Textbox -->
+                                <div class="col-md-8">
+                                    <div class="form-group" ng-class="{'has-error': EnquiryController.Mobile.$invalid}">
+                                        <input class="form-control" name="Mobile" placeholder="Mobile Number" title="Enter Mobile Number" ng-model="Mobile" ng-minlength="10" ng-maxlength="10" ng-pattern="/^[0-9]*$/" required>
+                                        <span class="help-block" ng-show="EnquiryController.Mobile.$error.pattern" style="color:red">Only Numbers Are allowed!</span>
+                                        <span class="help-block" ng-show="EnquiryController.Mobile.$error.required" style="color:red">Mandatory Field</span>
+                                        <span class="help-block" ng-show="EnquiryController.Mobile.$error.minlength" style="color:red">Mobile number should be 10 digit</span>
+                                        <span class="help-block" ng-show="EnquiryController.Mobile.$error.maxlength" style="color:red">Mobile number should be 10 digit</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-md-4">
+                                    <label padding-top:8px">Email Address</label>
+                                </div>
+                                <!-- email Textbox -->
+                                <div class="col-md-8">
+                                    <div class="form-group" ng-class="{'has-error': EnquiryController.Email.$invalid}">
+                                        <input class="form-control" type="email" name="Email" placeholder="Email Address" title="Enter Address" ng-model="Email" ng-minlength="8" ng-maxlength="60" ng-pattern="/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/">
+                                        <span class="help-block" ng-show="EnquiryController.Email.$error.email" style="color:red">Please Enter Valid Email</span>
+                                        <span class="help-block" ng-show="EnquiryController.Email.$error.maxlength" style="color:red">Only 60 Characters Allowed</span>
+                                        <span class="help-block" ng-show="EnquiryController.Email.$error.minlength" style="color:red">Please Enter Valid Email</span>
+                                        <span class="help-block" ng-show="EnquiryController.Email.$error.pattern" style="color:red">Please Enter Valid Email</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                </p>
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <p>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-md-4">
+                                <label>Address</label>
+                            </div>
+                            <!-- Address Textbox -->
+                            <div class="col-md-8">
+                                <div class="form-group" ng-class="{'has-error': EnquiryController.Address.$invalid}">
+                                    <input class="form-control" name="Address" placeholder="Address" title="Enter Address" ng-model="Address" ng-minlength="10" ng-maxlength="300">
+                                    <span class="help-block" ng-show="EnquiryController.Address.$error.minlength" style="color:red">Minimum 10 characters Required</span>
+                                    <span class="help-block" ng-show="EnquiryController.Address.$error.maxlength" style="color:red">Maximum 300 Characters are allowed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">State</label>
+                            </div>
+                            <!-- states Dropdown Box -->
+                            <div class="col-md-8">
+                                <select class="form-control" id="select_states">
+                                    <option ng-repeat="states in states">{{states}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">City</label>
+                            </div>
+                            <!-- City Textbox -->
+                            <div class="col-md-8">
+                                <div class="form-group" ng-class="{'has-error': EnquiryController.City.$invalid}">
+                                    <input class="form-control" name="City" placeholder="City" title="Enter City name" ng-model="City" ng-minlength="3" ng-maxlength="100" ng-pattern="/^[a-zA-Z_ ]*$/">
+                                    <span class="help-block" ng-show="EnquiryController.City.$error.pattern" style="color:red">Only characters are allowed</span>
+                                    <span class="help-block" ng-show="EnquiryController.City.$error.maxlength" style="color:red">Maximum 100 characters allowed</span>
+                                    <span class="help-block" ng-show="EnquiryController.City.$error.minlength" style="color:red">Minimum 3 Characters has to be enter</span>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">Pin Code</label>
+                            </div>
+                            <!-- Pin Code TextBox -->
+                            <div class="col-md-8">
+                                <div class="form-group" ng-class="{'has-error': EnquiryController.PinCode.$invalid}">
+                                    <input class="form-control" name="PinCode" placeholder="Pin Code" title="Enter Pin Code" ng-model="PinCode" ng-minlength="3" ng-maxlength="10" ng-pattern="/^[0-9]*$/">
+                                    <span class="help-block" ng-show="EnquiryController.PinCode.$error.pattern" style="color:red">Characters and Symbols are not Allowed</span>
+                                    <span class="help-block" ng-show="EnquiryController.PinCode.$error.maxlength" style="color:red">Maximum 10 characters allowed</span>
+                                    <span class="help-block" ng-show="EnquiryController.PinCode.$error.minlength" style="color:red">Minimum 3 characters should be Enter</span>
+                                </div> </div><br /><br />
+                        </div>
+                       
+                        <div class="col-md-12">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><br />
+
+            <div class="">
+                <div class="panel-custom-horrible-red">
+                    <div class="panel-heading">Interest</div><br />
+                    <div class="table-responsive">
+                        <div class="col-md-12 inline">
+                            <div class="col-md-12">
+                                <p>
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Select Interested Services</label>
+                                    </div>
+
+                                    <!-- Interested Services Dropdown Box -->
+                                    <div class="col-md-8">
+                                            <select name="character" id="interested_services" multiple>
+                                                <option ng-repeat="Is in InterestedServices">{{Is}}</option>
+                                            </select>
+                                            <script type="text/javascript">
+                                                $(function () {
+                                                    $('#interested_services').searchableOptionList({
+                                                        showSelectAll: true
+                                                    });
+                                                });
+                                            </script>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Select  days  of  week  to  attend</label>
+                                    </div>
+                                    <!-- interested days Dropdown Box -->
+                                    <div class="col-md-8">
+                                        <select name="character1" id="interested_days" multiple>
+                                            <option ng-repeat="Days in Days">{{Days}}</option>
+                                        </select>
+                                        <script type="text/javascript">
+                                        $(function() {
+                                            $('#interested_days').searchableOptionList({
+                                                showSelectAll: true
+                                            });
+                                        });
+                                        </script>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label>Select  Branch</label>
+
+                                    </div>
+                                    <!-- interested branch Dropdown Box -->
+                                    <div class="col-md-8">
+                                        <select id="interested_branch" name="Selectedbranch" multiple>
+                                            <option ng-repeat="branch in SelectBranch">{{branch}},</option>
+                                        </select>
+                                        <script type="text/javascript">
+                                        $(function() {
+                                            $('#interested_branch').searchableOptionList({
+                                                showSelectAll: true
+                                            });
+                                        });
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4">
+                                        <label for="comment">Comment:</label>
+                                    </div>
+                                    <!-- Comment Text Area -->
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" rows="3" id="comment" name="comment" ng-model="comment" ng-minlength="20" ng-maxlength="500"></textarea>
+                                        <span ng-show="EnquiryController.comment.$error.maxlength" style="color:red">You Can comment till 500 characters</span>
+                                        <span ng-show="EnquiryController.comment.$error.minlength" style="color:red">You Should enter 20 characters</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br /><br />
+            </div>    
+    <div class="col-md-12">
+    <p>
+    </p>
+    </div><br />
+
+            <div align="center">
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary  btn-lg" value="Submit" title="Submit" ng-disabled="((!EnquiryController.$valid)||(press!=0))">Submit</button>
+               <!-- Reset Button -->
+                 <button type="reset"  class="btn btn-primary btn-lg" onclick=reset() id="Reset">Reset</button>
+            </div>
+    <!-------------------------------------------------------------------------- Ending of Enquiry contain (body) ------------------------------------------------------------------------>
+
+        <br /><br /><br /><br />
+
+
+    </form>
+
+

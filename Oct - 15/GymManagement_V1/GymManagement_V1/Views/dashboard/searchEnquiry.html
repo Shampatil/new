@@ -1,0 +1,120 @@
+﻿<form name="searchEnquiryController" ng-submit="submitForm()">
+    <div class="container">
+        <div class="container">
+
+
+
+
+            <!-- Heading panel -->
+            <div class="container">
+                <h1 class="header light gray3 fancy"><span class="colored">Renewal</span></h1>
+
+                <!--<div class="col-md-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading" align="center"><h1>Enquiry Search</h1></div>
+                    </div>
+                </div>-->
+            </div>
+
+            <div class="container">
+                <div class="panel panel-info">
+                    <div class="panel-heading" align="center"><label>Enquiry Details</label></div>
+                    <div class="container">
+                        <div class="col-md-12">
+                            <p></p>
+
+                            <table class="table table-responsive table-bordered ">
+                                <!--table-striped-->
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>fname</th>
+                                        <th>mname</th>
+                                        <th>Lname</th>
+                                        <th>mobile</th>
+                                        <th>Email</th>
+                                        <th>InterestedServices</th>
+                                        <th>Interesteddays</th>
+                                        <th>admitted</th>
+                                        <th>follow up 1 Staus</th>
+                                        <th>followup1by</th>
+                                        <th>followup1date</th>
+                                        <th>follow up 2 Staus</th>
+                                        <th>followup2by</th>
+                                        <th>followup2date</th>
+                                        <th>follow up 3 Staus</th>
+                                        <th>followup3by</th>
+                                        <th>followup3date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-control" ng-model="search.id"></td>
+                                        <td><input class="form-control" ng-model="search.fname" ></td>
+                                        <td><input class="form-control" ng-model="search.mname"></td>
+                                        <td><input class="form-control" ng-model="search.Lname" ></td>
+                                        <td><input class="form-control" ng-model="search.mobile" ></td>
+                                        <td><input class="form-control" ng-model="search.Email" ></td>
+                                        <td><input class="form-control" ng-model="search.InterestedServices"></td>
+                                        <td><input class="form-control" ng-model="search.Interesteddays" ></td>
+                                        <td><input class="form-control" ng-model="search.admitted" ></td>
+                                        <td><input class="form-control" ng-model="search.followup1" ></td>
+                                        <td><input class="form-control" ng-model="search.followup1by" ></td>
+                                        <td><input class="form-control" ng-model="search.followup1date" ></td>
+                                        <td><input class="form-control" ng-model="search.followup2" ></td>
+                                        <td><input class="form-control" ng-model="search.followup2by" ></td>
+                                        <td><input class="form-control" ng-model="search.followup2date" ></td>
+                                        <td><input class="form-control" ng-model="search.followup3" ></td>
+                                        <td><input class="form-control" ng-model="search.followup3by" ></td>
+                                        <td><input class="form-control" ng-model="search.followup3date"></td>
+
+                                        <!--<td><input class="form-control" name="id" ng-model="search.id" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="fname" ng-model="search.fname" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="mname" ng-model="search.mname" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="Lname" ng-model="search.Lname" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="mobile" ng-model="search.mobile" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="Email" ng-model="search.Email" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="InterestedServices" ng-model="search.InterestedServices" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="Interesteddays" ng-model="search.Interesteddays" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="admitted" ng-model="search.admitted" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup1" ng-model="search.followup1" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup1by" ng-model="search.followup1by" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup1date" ng-model="search.followup1date" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup2" ng-model="search.followup2" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup2by" ng-model="search.followup2by" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup2date" ng-model="search.followup2date" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup3" ng-model="search.followup3" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup3by" ng-model="search.followup3by" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>
+                                        <td><input class="form-control" name="followup3date" ng-model="search.followup3date" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[0-9]*$/" required></td>-->
+
+                                    </tr>
+                                    <tr ng-repeat="enq in enquirysearch | filter: search:strict">
+                                        <td>{{enq.id}}</td>
+                                        <td>{{enq.fname}}</td>
+                                        <td>{{enq.mname}}</td>
+                                        <td>{{enq.Lname}}</td>
+                                        <td>{{enq.mobile}}</td>
+                                        <td>{{enq.Email}}</td>
+                                        <td>{{enq.InterestedServices}}</td>
+                                        <td>{{enq.Interesteddays}}</td>
+                                        <td>{{enq.admitted}}</td>
+                                        <td>{{enq.followup1}}</td>
+                                        <td>{{enq.followup1by}}</td>
+                                        <td>{{enq.followup1date}}</td>
+                                        <td>{{enq.followup2}}</td>
+                                        <td>{{enq.followup2by}}</td>
+                                        <td>{{enq.followup2date}}</td>
+                                        <td>{{enq.followup3}}</td>
+                                        <td>{{enq.followup3by}}</td>
+                                        <td>{{enq.followup3date}}</td>
+                                        <td><button class="btn btn-primary" onclick="document.location.href = 'index.html#/dashboard/career'">Add Followup</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+</form>

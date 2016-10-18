@@ -1,0 +1,526 @@
+﻿<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<form name="renewalController">
+<br />
+    <!-- Heading panel -->
+    <div class="container">
+
+        <h1 class="header light gray3 fancy"><span class="colored">Renewal</span></h1>
+
+    </div>
+    <br />
+
+    <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+    @Package     :-
+    @Sub-Package :-
+    @Category    :-
+    @Link        :-
+    @Since       :-
+    @Filesource  :-
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <div class="panel-custom-horrible-red">
+            <div class="panel-heading">
+                <div class="container-fluid panel-container">
+                    <div class="col-xs-3 text-left">
+                        <label class="fancy"style="font-size:150%;color: #402063;">Search Member Details</label>
+                    </div>
+                    <div class="col-xs-6 text-center ">
+                    </div>
+                    <div class="col-xs-3 text-right">
+                        <div class="squaredOne" >
+                                <input type="checkbox" value="None" id="squaredOne" name="check" />
+                                <label class="fancy"for="squaredOne"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <div id="searchtable">
+                <div class="col-lg-1"><input placeholder="ID" class="form-control" ng-model="search.ID"></div>
+                <div class="col-lg-3"><input placeholder="MemberId" class="form-control" ng-model="search.MemberId"></div>
+                <div class="col-lg-3"><input placeholder="GYMID" class="form-control" ng-model="search.GYMID"></div>
+                <div class="col-lg-3"><input placeholder="BranchID" class="form-control" ng-model="search.BranchID"></div>
+                <div class="col-lg-2"><input placeholder="InquiryID" class="form-control" ng-model="search.InquiryID"></div>
+
+                <div class="col-lg-1"><input placeholder="AdmissionDate" class="form-control" ng-model="search.AdmissionDate"></div>
+                <div class="col-lg-3"><input placeholder="EnquiryDate" class="form-control" ng-model="search.EnquiryDate"></div>
+                <div class="col-lg-3"><input placeholder="First Name" class="form-control" ng-model="search.Fname"></div>
+                <div class="col-lg-3"><input placeholder="Middle Name" class="form-control" ng-model="search.Mname"></div>
+                <div class="col-lg-2"><input placeholder="Last Name" class="form-control" ng-model="search.Lname"></div>
+
+                <div class="col-lg-1"><input placeholder="BirthDate" class="form-control" ng-model="search.BirthDate"></div>
+                <div class="col-lg-3"><input placeholder="Email" class="form-control" ng-model="search.Email"></div>
+                <div class="col-lg-3"><input placeholder="Mobile" class="form-control" ng-model="search.Mobile"></div>
+                <div class="col-lg-3"><input placeholder="Gender" class="form-control" ng-model="search.Gender"></div>
+                <div class="col-lg-2"><input placeholder="MarritalStatus" class="form-control" ng-model="search.MarritalStatus"></div>
+                <br />
+                <br /><br /><br /><br /><br />
+
+                <div style="overflow-x:auto;height:250px">
+                    <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>Select Member</th>
+                                <!--<th style="width: 50px;">Id</th>-->
+                                <th>Member_Id</th>
+                                <th>Gym_ID</th>
+                                <th>Branch_ID</th>
+                                <th>Inquiry_ID</th>
+                                <th>Admission_Date</th>
+                                <!--<th>Enquiry_Date</th>-->
+                                <th>First_Name</th>
+                                <th>Middle_Name</th>
+                                <th>Last_Name</th>
+                                <th>Birth_Date</th>
+                                <th>Email_Id</th>
+                                <th>Mobile</th>
+                                <th>Gender</th>
+                                <th>Marrital_Status</th>
+                            </tr>
+                        </thead>
+                        <tr ng-repeat="item in GMSMember | filter: search:strict ">
+                            <td><button class="btn btn-primary" align="center" ng-click=Selectmember(item.MemberId,item.ID,item.GYMID,item.BranchID,item.InquiryID,item.AdmissionDate,item.EnquiryDate,item.Fname,item.Mname,item.Lname,item.BirthDate,item.Email,item.Mobile,item.Gender,item.MarritalStatus)>Select</button></td>
+                            <!--<td>{{item.ID}}</td>-->
+                            <!--<td>{{item.ID}} </td>-->
+                            <td>{{item.MemberId}}</td>
+                            <td>{{item.GYMID}}</td>
+                            <td>{{item.BranchID}}</td>
+                            <td>{{item.InquiryID}}</td>
+                            <td>{{item.AdmissionDate}}</td>
+                            <!--<td>{{item.EnquiryDate}}</td>-->
+                            <td>{{item.Fname}}</td>
+                            <td>{{item.Mname}}</td>
+                            <td>{{item.Lname}}</td>
+                            <td>{{item.BirthDate}}</td>
+                            <td>{{item.Email}}</td>
+                            <td>{{item.Mobile}}</td>
+                            <td>{{item.Gender}}</td>
+                            <td>{{item.MarritalStatus}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <br /><br />
+            </div>
+        </div>
+        
+        <div class="col-md-12"><p></p></div><br />
+
+        <div class="panel-custom-horrible-red" ng-if="MemberId!=null">
+            <div class="panel-heading"> <label style="font-size:150%;color: #402063;">Selected User Details</label></div>
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <div class="col-md-1" style="font-weight: bold;">Member Id</div>
+                    <div class="col-md-3"><input ng-model="MemberId" placeholder="MemberId" class="form-control"></div>
+                    <div class="col-md-1"style="font-weight: bold;">Admission Date</div>
+                    <div class="col-md-3"><input ng-model="AdmissionDate" placeholder="AdmissionDate" class="form-control"></div>
+                    <div class="col-md-1"style="font-weight: bold;"></div>
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="col-md-12"><p></p></div>
+
+                <div class="col-md-12">
+                    <div class="col-md-1" style="font-weight: bold;">First Name</div>
+                    <div class="col-md-3"><input ng-model="Fname" placeholder="First Name" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;">Middle Name</div>
+                    <div class="col-md-3"><input ng-model="Mname" placeholder="Middle Name" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;">Last Name</div>
+                    <div class="col-md-3"><input ng-model="Lname" placeholder="Last Name" class="form-control"></div>
+                </div>
+                
+                <div class="col-md-12">
+                    <p>
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-1" style="font-weight: bold;">Birth Date</div>
+                    <div class="col-md-3"><input ng-model="BirthDate" placeholder="BirthDate" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;">Email</div>
+                    <div class="col-md-3"><input ng-model="Email" placeholder="Email" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;">Mobile</div>
+                    <div class="col-md-3"><input ng-model="Mobile" placeholder="Mobile" class="form-control"></div>
+                </div>
+                
+                <div class="col-md-12"><p></p></div>
+
+                <div class="col-md-12">
+                    <div class="col-md-1" style="font-weight: bold;">Gender</div>
+                    <div class="col-md-3"><input ng-model="Gender" placeholder="Gender" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;">Marrital Status</div>
+                    <div class="col-md-3"><input ng-model="MarritalStatus" placeholder="MarritalStatus" class="form-control"></div>
+                    <div class="col-md-1" style="font-weight: bold;"></div>
+                    <div class="col-md-3"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <br />
+
+        <div class="panel-custom-horrible-red" ng-if="MemberId!=null">
+            <div class="panel-heading">
+                <div class="container-fluid panel-container">
+                    <div class="col-xs-3 text-left">
+                        <label class="fancy"style="font-size:150%;color: #402063;">Selecte Package to Renew</label>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div style="overflow-x:auto;height:250px">
+                    <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                        <thead class="thead-inverse">
+                            <tr>
+                                <td>Select Package</td>
+                                <td>Member ID</td>
+                                <th>Transaction ID</th>
+                                <th>Invoice ID</th>
+                                <th>Package Name</th>
+                                <th>Package Price</th>
+                                <th>StartDate</th>
+                                <th>ValidityInDays</th>
+                                <th>EndDate</th>
+                                <th>DiscountInAmount</th>
+                                <th>IncludedServiceLevelTaxAmount</th>
+                                <th>TotalTaxInAmount</th>
+                                <th>TotalTaxInPercentage</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="Transactions in GMSinvoicePackage">
+                                <td ng-if="MemberId==Transactions.MemberID"><button class="btn btn-primary" align="center" ng-click=SelectedPackageRenew(Transactions.MemberID,Transactions.TransactionID,Transactions.InvoiceID,Transactions.Packagename,Transactions.StartDate,Transactions.ValidityInDays,Transactions.EndDate)>Select</button></td>
+                                <td ng-if="MemberId==Transactions.MemberID"> {{Transactions.MemberID}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID"> {{Transactions.TransactionID}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID"> {{Transactions.InvoiceID}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID"> {{Transactions.Packagename}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.PackagePrice}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.StartDate}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.ValidityInDays}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.EndDate}}</td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.DiscountInAmount}} </td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.IncludedServiceLevelTaxAmount}} </td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.TotalTaxInAmount}} </td>
+                                <td ng-if="MemberId==Transactions.MemberID">{{Transactions.TotalTaxInPercentage}} </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            <br />
+
+
+
+        <div class="panel-custom-horrible-red" ng-if="MemberId!=null && selectedPackageStartDate!=null && selectedPackageValidityInDays!=null && selectedPackageEndDate!=null">
+            <div class="panel-heading">
+                <div class="container-fluid panel-container">
+                    <div class="col-xs-3 text-left">
+                        <label class="fancy"style="font-size:150%;color: #402063;">{{selectedPackageName}} Package to Renew</label>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-6">
+
+                    <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                        <thead class="thead-inverse">
+                            <tr>
+                                <td colspan="2" align="center"><strong>Selected Package Details</strong> </td>
+                            </tr>
+
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th colspan="2"></th>
+                            </tr>
+                            <tr>
+                                <th> Package Start Date</th>
+                                <td> <lable><strong>{{selectedPackageStartDate}}</strong> </lable></td>
+                                <!--<td> <input placeholder="selectedPackageStartDate" class="form-control" ng-model="" readonly></td>-->
+                            </tr>
+                            <tr>
+                                <th> Current Validity days</th>
+                                <td><strong>{{selectedPackageValidityInDays}}</strong></td>
+                                <!--<td> <input placeholder="selectedPackageValidityInDays" class="form-control" ng-model="" readonly></td>-->
+                            </tr>
+                            <tr>
+                                <th> Current Package Expiry Date</th>
+                                <td><strong>{{selectedPackageEndDate}}</strong></td>
+                                <!--<td> <input placeholder="selectedPackageEndDate" class="form-control" ng-model="" readonly></td>-->
+                            </tr>
+                            <tr>
+                                <th> Add-on days</th>
+                                <td> <input placeholder="ID" class="form-control" ng-model="selectedPackageAddDays" ng-change="SelectedPackageRenewDate(selectedPackageAddDays,selectedPackageStartDate)"></td>
+                            </tr>
+                            <tr>
+                                <th> Total Day's after Add-on </th>
+                                <td> {{selectedPackageTotalDays}}</td>
+                            </tr>
+                            <tr>
+                                <th> Expiry date after Add-on </th>
+                                <td> {{selectedPackageNewExpityDate}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div ng-repeat="package in GMSpackages">
+                        <table class="table table-striped table-bordered table-responsive" ng-if="package.Packagename==selectedPackageName && package.AprovalStatus=='Aproved' && selectedPackageName!=null && package.Packagename!=null">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <td colspan="2" align="center"><strong>Selected {{package.Packagename}} Included Taxes</strong> </td>
+                                </tr>
+                                <tr>
+                                    <!--<th>Package</th>-->
+                                    <th>Services Name</th>
+                                    <th>Price</th>
+                                    <th>Included Taxes</th>
+                                </tr>
+                                <tr ng-repeat="Services in GMSPackageWithService">
+                                    <!--<th ng-if="Services.PackageName==package.Packagename">{{Services.PackageName}}</th>-->
+                                    <th ng-if="Services.PackageName==package.Packagename">{{Services.IncludeServiceName}}</th>
+                                    <th ng-if="Services.PackageName==package.Packagename">{{Services.ServicePrice}}</th>
+                                    <th ng-if="Services.PackageName==package.Packagename">
+                                        <table class="table table-striped table-bordered table-responsive">
+                                            <thead class="thead-inverse">
+                                                <tr>
+                                                    <th>Tax Name</th>
+                                                    <th>Package</th>
+                                                    <th>Rate</th>
+                                                </tr>
+                                                <tr ng-repeat="Taxes in taxes | unique:'TaxName || Product_Name'">
+                                                    <th ng-if="Taxes.Product_Name==Services.IncludeServiceName && Taxes.Product_Name!=null && Services.IncludeServiceName!=null" >{{Taxes.TaxName}}</th>
+                                                    <th ng-if="Taxes.Product_Name==Services.IncludeServiceName && Taxes.Product_Name!=null && Services.IncludeServiceName!=null" >{{Taxes.Product_Name}}</th>
+                                                    <th ng-if="Taxes.Product_Name==Services.IncludeServiceName && Taxes.Product_Name!=null && Services.IncludeServiceName!=null" >{{Taxes.Percentage}}</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <!--<div style="overflow-x:auto;height:300px">
+                        <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <td colspan="3" align="center"><strong>Selected Package Included Service</strong> </td>
+                                </tr>
+
+                                <tr>
+                                    <th>Service Name</th>
+                                    <th>Price</th>
+                                    <th>Discount Type</th>
+                                    <th>Discount Rate</th>
+                                    <th>Taxes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="TransactionsService in GMSinvoiceServices">
+                                    <td ng-if="MemberId==TransactionsService.MemberID && TransactionsService.Packagename==selectedPackageName"> {{TransactionsService.Service}}</td>
+                                    <td ng-if="MemberId==TransactionsService.MemberID && TransactionsService.Packagename==selectedPackageName"> {{TransactionsService.Price}}</td>
+
+                                    <td ng-if="MemberId==TransactionsService.MemberID && TransactionsService.Packagename==selectedPackageName"> <input placeholder="Inquiry ID" class="form-control"></td>
+                                    <td ng-if="MemberId==TransactionsService.MemberID && TransactionsService.Packagename==selectedPackageName"> <input placeholder="Inquiry ID" class="form-control">  </td>
+
+                                    <td ng-if="MemberId==TransactionsService.MemberID && TransactionsService.Packagename==selectedPackageName">
+                                        <table class="table table-striped table-bordered table-responsive">
+                                            <thead class="thead-inverse">
+                                                <tr>
+                                                    <td colspan="2" align="center"><strong>Selected {{TransactionsService.Service}} Included Taxes</strong> </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Tax Name</th>
+                                                    <th>Rate</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="ServiceTaxes in taxes">
+                                                    <td ng-if="TransactionsService.Service==ServiceTaxes.Product_Name && ServiceTaxes.Product_Type=='Service level Tax' && ServiceTaxes.Product_Name!=null && ServiceTaxes.Product_Type!=null && TransactionsService.Service!=null"> {{ServiceTaxes.TaxName}}</td>
+                                                    <td ng-if="TransactionsService.Service==ServiceTaxes.Product_Name && ServiceTaxes.Product_Type=='Service level Tax' && ServiceTaxes.Product_Name!=null && ServiceTaxes.Product_Type!=null && TransactionsService.Service!=null"> {{ServiceTaxes.Percentage}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+        @Package     :-
+        @Sub-Package :-
+        @Category    :-
+        @Link        :-
+        @Since       :-
+        @Filesource  :-
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="panel-custom-horrible-red" ng-if="MemberId!=null && selectedPackageStartDate!=null && selectedPackageValidityInDays!=null && selectedPackageEndDate!=null">
+                <div class="panel-heading"><label class="fancy"class="fancy" style="font-size:150%;color: #402063;  ">Payment Details</label> </div>
+
+                <div class="panel-body">
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="col-md-2">
+                            <label class="fancy"style="padding-top:8px">Select payment Method :</label>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="followup_Status" class="form-control" id="followup_Status" ng-model="followup_Status" ng-options="service.ServiceID as service.ServiceName for service in services">
+                                <option value="">Select Service</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="cheque" class="col-md-12" style="display:none">
+                        <br />
+                        <div class="col-md-2">
+                            <label class="fancy"style="padding-top:8px">Bank Name :</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Cheque Number</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Cheque Number" class="form-control">
+                        </div>
+                        <br />
+                    </div>
+
+
+                    <div id="cash" class="col-md-12" style="display:none">
+                    </div>
+
+                    <div id="debitcard" class="col-md-12" style="display:none">
+                        <br />
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Card Number :</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Card Number" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Bank Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                        </div>
+                        <br />
+                    </div>
+
+                    <div id="creditcard" class="col-md-12" style="display:none">
+                        <br />
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Card Number :</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Card Number" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Bank Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                        </div>
+                        <br />
+                    </div>
+
+                    <div class="col-md-12"><p></p></div>
+
+                    <div class="col-md-12">
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">MRP:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="mrp" placeholder="MRP" title="Enter MRP" ng-model="Email" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Balance Payment:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="BalancePayment" placeholder="Enter Balance Payment" title="Enter Balance Payment" ng-model="BalancePayment" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div><div class="col-md-12"><p></p></div>
+
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Discount:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="discount" placeholder="Enter Discount" title="Enter Discount" ng-model="discount" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Additional Discount:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="adiscount" placeholder="Enter Additional Discount" title="Enter Additional Discount" ng-model="adiscount" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div><div class="col-md-12"><p></p></div>
+
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Bill Amount:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="bill" placeholder="Billing Amount" title="Billing Amount" ng-model="bill" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Tax:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="tax" placeholder="Tax Applicable" title="Tax Applicable" ng-model="tax" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div><div class="col-md-12"><p></p></div>
+
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Remark:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="remarks" placeholder="Enter Remarks" title="Enter Remarks" ng-model="remarks" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div>
+                        <div class="col-md-2">
+                            <label style="padding-top:8px">Authorised By:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="authorisedby" placeholder="Authorised person name" title="Authorised person name" ng-model="authorisedby" ng-minlength="3" ng-maxlength="8" ng-pattern="/^[a-zA-Z]*$/">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12"><p><p></p></div><br />
+            </div>
+
+            <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+        @Package     :-
+        @Sub-Package :-
+        @Category    :-
+        @Link        :-
+        @Since       :-
+        @Filesource  :-
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+            <div ng-if="MemberId!=null">
+                <div class="col-md-12"><p></p></div>
+
+                <div class="container" align="center">
+                    <button type="submit" class="btn btn-primary btn-lg" align="center" onclick="careerController" ng-click="submitted=true">Submit</button>
+                    <button type="reset" class="btn btn-danger btn-lg" onclick="document.location.href = 'index.html#/dashboard/home';">Cancel</button>
+                </div>
+                <div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div>
+                <div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div><div class="col-md-12"><p></p></div>
+            </div>
+        </div>
+        </form>

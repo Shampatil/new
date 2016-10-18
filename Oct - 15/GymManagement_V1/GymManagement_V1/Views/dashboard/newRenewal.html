@@ -1,0 +1,531 @@
+﻿<form style="background-color:white" name="newRenewalController" ng-app="gymManagementApp" ng-controller="newRenewalController" novalidate>
+    <br />
+    <div class="">
+
+        <h1 class="header light gray3 fancy"><span class="colored">Renewal</span></h1>
+
+        <br />
+        <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+    @Package     :-
+    @Sub-Package :-
+    @Category    :-
+    @Link        :-
+    @Since       :-
+    @Filesource  :-
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="panel-custom-horrible-red">
+            <div class="panel-heading">
+                <div class="container-fluid panel-container">
+                    <div class="col-xs-3 text-left">
+                        <label style="font-size:150%;color: #402063;">Search Enquiry Details</label>
+                    </div>
+                    <div class="col-xs-6 text-center ">
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="col-lg-1"><input placeholder="Inquiry ID" id="InquiryID" class="form-control" ng-model="search.InquiryID"></div>
+            <div class="col-lg-3"><input placeholder="First Name" class="form-control" ng-model="search.Fname"></div>
+            <div class="col-lg-3"><input placeholder="Middle Name" class="form-control" ng-model="search.Mname"></div>
+            <div class="col-lg-3"><input placeholder="Last Name" class="form-control" ng-model="search.Lname"></div>
+            <div class="col-lg-2"><input placeholder="Birth Date" class="form-control" ng-model="search.BirthDate"></div>
+
+            <br />
+            <br /><br />
+            <div id="searchtable" class="">
+                <div style="overflow-x:auto;height:250px">
+                    <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>Member_Id</th>
+                                <th>Admission_Date</th>
+                                <th>First_Name</th>
+                                <th>Middle_Name</th>
+                                <th>Last_Name</th>
+                                <th>Birth_Date</th>
+                                <th>Email_Id</th>
+                                <th>Mobile</th>
+                                <th>Gender</th>
+                                <th>Marrital_Status</th>
+                            </tr>
+                        </thead>
+                        <tr ng-repeat="item in GMSMember | filter: search:strict " ng-click=Selectmember(item.MemberId,item.ID,item.GYMID,item.BranchID,item.InquiryID,item.AdmissionDate,item.EnquiryDate,item.Fname,item.Mname,item.Lname,item.BirthDate,item.Email,item.Mobile,item.Gender,item.MarritalStatus)>
+                            <th>{{item.MemberId}}</th>
+                            <th>{{item.AdmissionDate}}</th>
+                            <th>{{item.Fname}}</th>
+                            <th>{{item.Mname}}</th>
+                            <th>{{item.Lname}}</th>
+                            <th>{{item.BirthDate}}</th>
+                            <th>{{item.Email}}</th>
+                            <th>{{item.Mobile}}</th>
+                            <th>{{item.Gender}}</th>
+                            <th>{{item.MarritalStatus}}</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br />
+                <div class="panel-custom-horrible-red" ng-if="MemberId!=null">
+                    <div class="panel-heading"> <label style="font-size:150%;color: #402063;">Selected User Details</label></div>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="col-md-1" style="font-weight: bold;">Member Id</div>
+                            <div class="col-md-3"><input ng-model="MemberId" placeholder="MemberId" class="form-control" readonly></div>
+                            <div class="col-md-1" style="font-weight: bold;">Admission Date</div>
+                            <div class="col-md-3"><input ng-model="AdmissionDate" placeholder="AdmissionDate" class="form-control" readonly></div>
+                            <div class="col-md-1" style="font-weight: bold;">Gender</div>
+                            <div class="col-md-3"><input ng-model="Gender" placeholder="Gender" class="form-control" readonly></div>
+                        </div>
+                        <div class="col-md-12"><p></p></div>
+                        <div class="col-md-12">
+                            <div class="col-md-1" style="font-weight: bold;">First Name</div>
+                            <div class="col-md-3"><input ng-model="Fname" id="Fname" placeholder="First Name" class="form-control" readonly></div>
+                            <div class="col-md-1" style="font-weight: bold;">Middle Name</div>
+                            <div class="col-md-3"><input ng-model="Mname" id="Mname" placeholder="Middle Name" class="form-control" readonly></div>
+                            <div class="col-md-1" style="font-weight: bold;">Last Name</div>
+                            <div class="col-md-3"><input ng-model="Lname" id="Lname" placeholder="Last Name" class="form-control" readonly></div>
+                        </div>
+                        <div class="col-md-12"><p></p></div>
+                        <div class="col-md-12">
+                            <div class="col-md-1" style="font-weight: bold;">Email</div>
+                            <div class="col-md-3"><input ng-model="Email" placeholder="Email" class="form-control" readonly></div>
+                            <div class="col-md-1" style="font-weight: bold;">Mobile</div>
+                            <div class="col-md-3"><input ng-model="Mobile" placeholder="Mobile" class="form-control" readonly></div>
+                        </div>
+                    </div>
+                </div>
+       
+    </div>
+         <!-- End of User Details Container class -->
+
+    <!--End of Heading panel -->
+   
+    <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+    @Package     :-
+    @Sub-Package :-
+    @Category    :-
+    @Link        :-
+    @Since       :-
+    @Filesource  :-
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div ng-if="Fname!=null && Lname!=null && Mobile!=null">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr id="master" ng-repeat="packages in packagerow">
+                            <td colspan="2">
+                                <table class="table table-bordered table-responsive">
+                                    <thead class="thead-inverse">
+                                        <tr style="background-color:#D2B4E4">
+                                            <th width="10%" colspan="2">Select Package Name</th>
+                                            <th width="20%"><select class="form-control" ng-model="packages.Packagename" ng-change=getpackagesarray(packages.Packagename.Packagename,packages.Packagename.ValidityDays) ng-options="pk as pk.Packagename for pk in GMSNewPackages" required></select></th>
+                                            <th  width="70%"><label ng-if="packages.Packagename.Packagename==null" style="color:red">Please Select Package</label></th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr ng-if="packages.Packagename.Packagename!=null">
+                                           <th colspan="4" width="100%">
+                                                <table class="table table-bordered table-responsive">
+                                                    <thead class="thead-inverse">
+                                                        <tr>
+                                                            <th style="background-color:#D2B4E4" width="5%">Start Date</th>
+                                                            <th width="5%">{{pkgstrtdt}}</th>
+                                                            <th style="background-color:#D2B4E4" width="5%">Validity</th>
+                                                            <th width="2%">{{pkgdays}}</th>
+                                                            <th style="background-color:#D2B4E4" width="5%">Expiry Date</th>
+                                                            <th width="10%">{{pkgendDate}}</th>
+                                                            <th style="background-color:#D2B4E4" width="10%">Add-on Validity Days</th>
+                                                            <th width="2%">{{pkgAddonDays}} </th>
+                                                            <th style="background-color:#D2B4E4" width="15%">Package Expiry Date After Add-on</th>
+                                                            <th width="15%"> {{pkgAddonExpiryDate}}</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <table class="table table-bordered table-responsive" ng-if="packages.Packagename.Packagename!=null">
+                                    <thead class="thead-inverse">
+                                        <tr style="background-color:#D2B4E4">
+                                            <th>ServiceName</th>
+                                            <th>Base Price</th>
+                                            <th>Discount type</th>
+                                            <th>Discount</th>
+                                            <th>Price After Discount</th>
+                                            <th>Tax &#x20B9;</th>
+                                            <th>Price After Tax</th>
+                                            <th>Service Level Taxes</th>
+                                        </tr>
+                                    </thead>
+                                    <thead>
+                                        <tr ng-repeat="includeservice in packagewithservice" ng-if="packages.Packagename.Packagename == includeservice.PackageName">
+                                            <th>
+                                                {{includeservice.IncludeServiceName}}
+                                            </th> <!-- Service Name -->
+                                            <th>
+                                                <!--<input type="number" class="form-control" aria-describedby="basic-addon1" ng-model="includeservice.ServicePrice" ng-value=includeservice.ServicePrice required />-->
+                                                {{includeservice.ServicePrice}}
+                                            </th> <!-- Service Base Price -->
+                                            <th>
+                                                {{includeservice.DiscountType}}
+                                            </th> <!-- Select Discount Type -->
+                                            <th>
+                                                <div ng-if="includeservice.DiscountType=='Percentage'">
+                                                        % {{includeservice.ServiceDiscount}}
+                                                </div>
+                                                <div ng-if="includeservice.DiscountType=='Rupees'">
+                                                        &#x20B9; {{includeservice.ServiceDiscount}}
+                                                </div>
+                                            </th> <!-- Discount Input -------->
+                                            <th>
+                                                <div ng-if="includeservice.DiscountType=='Percentage'">
+                                                    <div class="input-group">
+                                                        &#x20B9; {{(includeservice.ServicePrice-(includeservice.ServicePrice*includeservice.ServiceDiscount/100)) }}
+                                                    </div>
+                                                </div>
+
+                                                <div ng-if="includeservice.DiscountType=='Rupees'">
+                                                    <div class="input-group">
+                                                        &#x20B9;
+                                                        {{includeservice.ServicePrice-includeservice.ServiceDiscount}} 
+                                                    </div>
+                                                </div>
+                                            </th> <!-- Price After Discount -->
+                                            <th>
+                                                <div ng-if="includeservice.DiscountType=='Rupees'">{{(includeservice.ServicePrice-includeservice.ServiceDiscount)*(includeservice.TotalTax/100)}}</div>
+                                                <div ng-if="includeservice.DiscountType=='Percentage'">{{(includeservice.ServicePrice-(includeservice.ServicePrice*includeservice.ServiceDiscount/100))*(includeservice.TotalTax/100)}}</div> 
+                                            </th> <!-- Tax In Rupees --------->
+                                            <th>
+                                                <div ng-if="includeservice.DiscountType=='Rupees'"> {{(includeservice.ServicePrice-includeservice.ServiceDiscount)*(includeservice.TotalTax/100)+(includeservice.ServicePrice-includeservice.ServiceDiscount)}} </div>
+                                                <div ng-if="includeservice.DiscountType=='Percentage' && includeservice.ServiceDiscount!=''">{{((includeservice.ServicePrice-(includeservice.ServicePrice*includeservice.ServiceDiscount/100))*includeservice.TotalTax/100)+(includeservice.ServicePrice-(includeservice.ServicePrice*includeservice.ServiceDiscount/100))}} </div>
+                                            </th> <!-- Price After Discount and Tax -->
+                                            <td>
+                                                <table class="table table-bordered table-responsive">
+                                                    <thead class="thead-inverse">
+                                                        <tr style="background-color:#D2B4E4">
+                                                            <th>Tax Name</th>
+                                                            <th>Tax %</th>
+                                                        </tr>
+                                                    </thead> <!-- Service Tax Headings -->
+                                                    <thead>
+                                                        <tr ng-repeat="tax in taxes">
+                                                            <td ng-if="packages.Packagename.Packagename == includeservice.PackageName && includeservice.IncludeServiceName==tax.Product_Name && tax.Product_Type=='Service level Tax'">
+                                                                {{tax.TaxName}}
+                                                            </td> <!-- Tax Name -->
+                                                            <td ng-if="packages.Packagename.Packagename == includeservice.PackageName && includeservice.IncludeServiceName==tax.Product_Name && tax.Product_Type=='Service level Tax'">
+                                                                {{tax.Percentage}}
+                                                            </td> <!-- Tax Rate -->
+                                                        </tr> <!-- Service Tax Data -->
+                                                        <tr style="background-color:#D2B4E4">
+                                                            <th>
+                                                                Total
+                                                            </th>
+                                                            <th>
+                                                                {{includeservice.TotalTax}}
+                                                            </th>
+                                                        </tr> <!-- Service Tax Total -->
+                                                    </thead>
+                                                </table>
+                                            <!--</th>--> <!-- Service Tax Details -->
+                                        </tr>
+                                        <tr style="background-color:#D2B4E4" ng-if="packages.Packagename.Packagename!=null">
+                                            <th>
+                                                <table class="table table-bordered table-responsive">
+                                                    <thead class="thead-inverse">
+                                                        <tr style="background-color:#D2B4E4;">
+                                                            <th colspan="2">Package Level Taxes</th>
+                                                        </tr>
+                                                        <tr style="background-color:#D2B4E4">
+                                                            <th>Tax Name</th>
+                                                            <th>Tax %</th>
+                                                        </tr>
+                                                    </thead> <!-- Package Tax Headings -->
+                                                    <thead>
+
+                                                        <tr ng-repeat="tax in taxes">
+                                                            <td ng-if="packages.Packagename.Packagename == tax.Product_Name && tax.Product_Type=='Package Level Tax' && packages.Packagename.Packagename!=null && tax.TaxName!=null && tax.Percentage!=null">{{tax.TaxName}}</th>
+                                                            <td ng-if="packages.Packagename.Packagename == tax.Product_Name && tax.Product_Type=='Package Level Tax' && packages.Packagename.Packagename!=null && tax.TaxName!=null && tax.Percentage!=null">{{tax.Percentage}}</th>
+                                                        </tr>
+                                                        <tr style="background-color:#D2B4E4">
+                                                            <th>Total %</th>
+                                                            <th>{{getpackageLevelTaxTotal(packages.Packagename.Packagename)}}</th>
+                                                        </tr>
+                                                        <tr style="background-color:#D2B4E4">
+                                                            <th>
+                                                                Total &#x20B9;
+                                                            </th>
+                                                            <th>
+                                                                {{(getpackageLevelTaxTotal(packages.Packagename.Packagename) * (getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))) /100)}}
+                                                            </th>
+
+                                                        </tr>
+
+                                                    </thead>                       <!-- Package Tax Data -->
+                                                </table>
+                                            </th>   <!-- Package Tax Details -->
+                                            <th>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="packages.Packageprice" ng-value=getpackageDetails(packages.Packagename.Packagename) readonly />
+                                            </th>   <!-- Package Total Price -->
+
+                                            <th></th>   <!-- Blank-->
+
+                                            <td width="10%">
+                                                <div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1"> <b>&#x20B9;</b></span>
+                                                        <input type="text" class="form-control" ng-model="packages.Packagetotaldiscount" ng-value=GetPackageTotaldiscount(packages.Packagename.Packagename) readonly />
+                                                    </div>
+                                                    <br />
+                                                </div> <!-- Package Discount Total In Rupess -->
+                                                <div>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1"> <b>%</b></span>
+                                                        <!--<input type="text" class="form-control" ng-model="packages.Packagetotaldiscount" ng-value=(GetPackageTotaldiscount(packages.packagename.Packagename)/(getpackageDetails(packages.packagename.Packagename))*100) readonly />-->
+                                                        <input type="text" class="form-control" value={{getpackagetotaldiscountinpercentage(packages.Packagename.Packagename)}} readonly />
+                                                    </div>
+                                                </div> <!-- Package Discount Total In Percentage -->
+                                            </th>   <!-- Package Discount Total Details -->
+                                            <th>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="packages.packagestotalaftertax" ng-value=(getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))) readonly />
+                                            </th>
+                                            <th>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="packages.packagestotaltax" ng-value=getpackagestotaltax(packages.Packagename.Packagename) readonly />
+                                            </th>
+                                            <th>
+                                                <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="packages.packagestotalafterdiscountandprice" ng-value=getpackagestotaltax(packages.Packagename.Packagename)+(getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))) readonly />
+                                            </th>
+                                            <th>
+                                                <!--{{getpackagestotaltax(packages.packagename.Packagename)+(getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename)))}}<br />
+                                                {{(getpackageLevelTaxTotal(packages.Packagename.Packagename) * (getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))) /100)}} <br />------------<br />
+                                                {{(getpackagestotaltax(packages.Packagename.Packagename)+(getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))))+(getpackageLevelTaxTotal(packages.Packagename.Packagename) * (getpackageDetails(packages.Packagename.Packagename)-(GetPackageTotaldiscount(packages.Packagename.Packagename))) /100)}}-->
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                </table>
+                            </th>
+                            <!--<td style="width:2%">
+                                <button ng-click="packagerRow($index)" class="btn btn-danger btn_remove">x</button>
+                            </th>-->
+                        </tr>
+
+
+                    </thead>
+                </table>
+                <!--<div class="col-md-12" align="center">
+                    <button ng-click="addpackage()" ng-disabled="!newRenewalController.$valid" class="btn btn-success">Add-Package</button>
+                </div>-->
+                
+            </div>
+           <br />
+        </div>
+        <div class="container">
+            <p></p>
+        </div>
+
+        <div>
+            <div class="panel-custom-horrible-red">
+                <div class="panel-heading" style="background-color:#D2B4E4"><label style="font-size:150%;color: #402063;  ">Invoice Details</label> </div>
+                <table class="table table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Package Base Price</th>
+                            <th> {{getpackagestotalprice()}}</th>
+                            <!--</tr>
+                             <tr>-->
+                            <th>Total Discount</th>
+                            <th> {{getpackagestotalDiscount()}}</th>
+                        </tr>
+                        <tr>
+                            <th>Price After Discount</th>
+                            <th> {{getpackagestotalprice()-getpackagestotalDiscount()}}</th>
+                            <!--</tr>
+                            <tr>-->
+                            <th>Service Level Tax</th>
+                            <th> {{getallpackagestotaltax()}}</th>
+                        </tr>
+                        <tr>
+                            <th>Package Level Tax</th>
+                            <th>{{getpackagleveltaxamount()}} </th>
+                            <!--</tr>
+                             <tr>-->
+                            <th>Gross Amount </th>
+                            <th>{{(getpackagleveltaxamount() + (getpackagestotalprice()-getpackagestotalDiscount()) + getallpackagestotaltax())}} </th>
+                            <!--<th><input class="form-control" ng-model="grossamount" ng-value=getpackagleveltaxamount()+(getpackagestotalprice()-getpackagestotaldiscount())+getallpackagestotaltax()></th>-->
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+
+        <br />
+
+        <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+        @Package     :-
+        @Sub-Package :-
+        @Category    :-
+        @Link        :-
+        @Since       :-
+        @Filesource  :-
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--<input class="form-control" jqdatepicker/>-->
+        <div class="panel-custom-horrible-red">
+            <div class="panel-heading"><label style="font-size:150%;color: #402063;  ">Payment Details</label> </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <p></p>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Select payment Method :</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="paymentMethod" class="form-control" id="paymentMethod" ng-model="paymentMethod" ng-options="service.ServiceID as service.ServiceName for service in services" required>
+                            <option value="">Select Payment Method</option>
+                        </select>
+                        <span class="help-block" ng-show="newRenewalController.paymentMethod.$error.required" style="color:red">Select Payment Method</span>
+                    </div>
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Transaction ID:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" id="uniquid" name="uniquid" value={{UNIQUETRANSACTIONID}} readonly>
+                    </div>
+                </div>
+
+                <div id="cheque" class="col-md-12" style="display:none">
+                    <br />
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Bank Name :</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Cheque Number</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Cheque Number" class="form-control">
+                    </div>
+                    <br />
+                </div>
+
+
+                <div id="cash" class="col-md-12" style="display:none">
+                </div>
+
+                <div id="debitcard" class="col-md-12" style="display:none">
+                    <br />
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Card Number :</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Card Number" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Bank Name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                    </div>
+                    <br />
+                </div>
+
+
+                <div id="creditcard" class="col-md-12" style="display:none">
+                    <br />
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Card Number :</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Card Number" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Bank Name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input id="lname" name="name" placeholder="Bank Name" class="form-control">
+                    </div>
+                    <br />
+                </div>
+
+
+                <div class="col-md-12"><p></p></div>
+
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Billing Amount:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" name="BillingAmount" title="Enter MRP" id="BillingAmount" value={{(getpackagleveltaxamount()+(getpackagestotalprice()-getpackagestotalDiscount())+getallpackagestotaltax())}}>
+                    </div>
+
+
+
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Paying Amount:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" ng-model="payingAmount" name="payingAmount" id="payingAmount" ng-required="true" type="number">
+                        <span class="help-block" ng-show="newRenewalController.payingAmount.$error.required" style="color:red">Enter payment Amount</span>
+                        <span class="help-block" ng-show="newRenewalController.payingAmount.$error.pattern" style="color:red">Only Numbers are Allowed</span>
+                    </div>
+
+                    <div class="col-md-12"><p></p></div>
+
+
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Balance Payment:</label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input class="form-control" name="BalancePayment" id="BalancePayment" value={{(getpackagleveltaxamount()+(getpackagestotalprice()-getpackagestotalDiscount())+getallpackagestotaltax())-payingAmount}}>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Invoice Date:</label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input class="form-control" name="invoiceDate" ng-model="invoiceDate" readonly>
+                    </div>
+
+                    <div class="col-md-12"><p></p></div>
+
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Remark:</label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input class="form-control" name="remarks" placeholder="Enter Remarks" title="Enter Remarks" ng-model="remarks">
+                    </div>
+
+                    <div class="col-md-2">
+                        <label style="padding-top:8px">Authorised By:</label>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input class="form-control" name="authorisedby" placeholder="Authorised person name" title="Authorised person name" ng-model="authorisedby" required readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12"><p><p></p></div><br />
+        </div>
+        <div class="col-md-12"><p></p></div>
+        <div class="container" align="center">
+            <button type="submit" class="btn btn-primary btn-lg" align="center" ng-disabled="((!newRenewalController.$valid) || (startsubmitting!=0))" ng-click="submitted=true && submitinvoiceForm()">Submit</button>
+            <button type="reset" class="btn btn-danger btn-lg" onclick="document.location.href = 'index.html#/dashboard/home';">Cancel</button>
+        </div>
+                <div class="col-md-12"><p></p></div>
+                <div class="col-md-12" align="center"></div>
+                <div class="col-md-12"><p></p></div>
+                <div class="col-md-12"><p></p></div>
+                <div class="col-md-12"><p></p></div>
+                <div class="col-md-12"><p></p></div>
+</form>

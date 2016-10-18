@@ -1,0 +1,64 @@
+﻿<form name="contactUSController" ng-submit="submitForm()">
+             <br />
+    <h1 class="header light gray3 fancy"><span class="colored">Contact Us</span></h1>
+    <div class="panel-custom-horrible-red" align="center">
+        <div class="panel-heading"><label style="font-size:200%;color: #402063; ">Contact Us</label></div>
+
+        <br />
+        <div class="panel-body">
+            <div class="col-md-6">
+                <div class="panel-custom-horrible-red">
+                    <div class="panel-heading"><label style="font-size:150%;color: #402063; ">Submit Your Queries</label></div>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">Name</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input class="form-control" name="name" placeholder="Enter Your Name" title="Enter Your  name" ng-model="name" ng-minlength="3" ng-maxlength="50" ng-pattern="/^[a-zA-Z]*$/" required>
+                                <span ng-show="submitted && contactUSController.Fname.$error.pattern" style="color:red">Number and charaters are not allowed!</span>
+                                <span ng-show="submitted && contactUSController.Fname.$error.required" style="color:red">This field is required!</span>
+                                <span ng-show="submitted && contactUSController.Fname.$error.minlength" style="color:red">Minimum 3 letters should be Entered</span>
+                                <span ng-show="submitted && contactUSController.Fname.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">Email </label>
+                            </div>
+                            <div class="col-md-8">
+                                <input class="form-control" name="Email" placeholder="Enter Your Email Address" title="Enter Your Email Address" ng-model="Mname" ng-minlength="3" ng-maxlength="50" ng-pattern="/^[a-zA-Z]*$/" required>
+                                <span ng-show="submitted && careerController.Mname.$error.pattern" style="color:red">Number and charaters are not allowed!</span>
+                                <span ng-show="submitted && careerController.Mname.$error.required" style="color:red">This field is required!</span>
+                                <span ng-show="submitted && careerController.Mname.$error.minlength" style="color:red">Minimum 3 letters should be Entered</span>
+                                <span ng-show="submitted && careerController.Mname.$error.maxlength" style="color:red">Maximum 50 letters Allowed</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p></p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-4">
+                                <label style="padding-top:8px">Comment</label>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea class="form-control" rows="4" cols="50"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p></p>
+                        </div>
+                        <div align="center">
+                            <button type="submit" class="btn btn-primary btn-lg" align="center" onclick="careerController" ng-click="submitted=true">Submit</button>
+                            <button type="reset" class="btn btn-danger btn-lg" onclick="document.location.href = 'index.html#/dashboard/home';">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+</form>

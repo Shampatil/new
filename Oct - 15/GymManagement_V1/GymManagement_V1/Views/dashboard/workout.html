@@ -1,0 +1,370 @@
+﻿<form name="workoutController" ng-app="gymManagementApp" ng-controller="workoutController" novalidate>
+    <br />
+    <div class="">
+
+        <h1 class="header light gray3 fancy"><span class="colored">Add Workout</span>  </h1>
+        <div class="panel-body">
+            <div class="panel-custom-horrible-red">
+                <div class="panel-heading">
+                    <div class="container-fluid panel-container">
+                        <div class="col-xs-3 text-left">
+                            <label class="fancy" style="font-size:150%;color: #402063;">Search Member Details</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div style="overflow-x:auto;height:250px">
+                    <div>
+                        <div class="col-md-3"><input placeholder="MemberId" class="form-control" ng-model="search.MemberID"></div>
+                        <div class="col-md-3"><input placeholder="First Name" class="form-control" ng-model="search.Fname"></div>
+                        <div class="col-md-3"><input placeholder="Middle Name" class="form-control" ng-model="search.Mname"></div>
+                        <div class="col-md-3"><input placeholder="Last Name" class="form-control" ng-model="search.Lname"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                    <table id="enquirysearch" class="table table-striped table-bordered table-responsive" arrow-selector>
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>MemberID</th>
+                                <th>Fname</th>
+                                <th>Mname</th>
+                                <th>Lname</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Gender</th>
+                                <th>Packagename</th>
+                                <th>Service</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tr ng-repeat="item in newInvoiceServices | filter: search:strict" ng-click="SelectMember(item.MemberID,item.Fname,item.Mname,item.Lname,item.Email,item.Mobile,item.Gender,item.Packagename,item.Service,item.Price,item.Height,item.Weight,item.BG,item.BP,item.Diabetes,item.hospitalized,item.injuries_Head,item.injuries_bones,item.injuries_Neck)">
+
+                            <td>{{item.MemberID}}</td>
+                            <td>{{item.Fname}}</td>
+                            <td>{{item.Fname}}</td>
+                            <td>{{item.Mname}}</td>
+                            <td>{{item.Lname}}</td>
+                            <td>{{item.Email}}</td>
+                            <td>{{item.Mobile}}</td>
+                            <td>{{item.Gender}}</td>
+                            <td>{{item.Packagename}}</td>
+                            <td>{{item.Service}}</td>
+                            <td>{{item.Price}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <div class="panel-custom-horrible-red">
+                <div class="panel-heading">
+                    <div class="container-fluid panel-container">
+                        <div class="col-xs-3 text-left">
+                            <label class="fancy"class="fancy"style="font-size:150%;color: #402063;">Selected Member Details</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>MemberID</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="MemberID" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Fname</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Fname" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Mname</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Mname" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Lname</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Lname" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Email" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Mobile</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Mobile" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Gender</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Mobile" class="form-control" readonly />
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Height</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Height" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Weight</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Weight" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <br />
+            <div class="panel-custom-horrible-red">
+                <div class="panel-heading">
+                    <div class="container-fluid panel-container">
+                        <div class="col-xs-3 text-left">
+                            <label class="fancy"style="font-size:150%;color: #402063;">Selected Member Medical History</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Blood Group</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="BG" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>BP</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="BP" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>Diabetes</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="Diabetes" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>hospitalized</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="hospitalized" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>injuries Head</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="injuries_Head" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>injuries bones</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="injuries_bones" class="form-control" readonly />
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="col-md-4">
+                            <label>injuries Neck</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input ng-model="injuries_Neck" class="form-control" readonly />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="panel-custom-horrible-red">
+                <div class="panel-heading">
+                    <div class="container-fluid panel-container">
+                        <div class="col-xs-3 text-left">
+                            <label class="fancy"style="font-size:150%;color: #402063;">Add Workout Plan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+
+                            <!---------------------------------------------------------------------------------------------------------------------------------->
+                            <table id="enquirysearch" class="table table-striped table-bordered table-responsive">
+
+                                <thead>
+                                    <tr>
+                                        <th>Member ID</th>
+                                        <th>Week Days</th>
+                                        <th>Exercise Type</th>
+                                        <th>Muscle Group</th>
+                                        <th>Exercise</th>
+                                        <th>Equipment</th>
+                                        <th>Rep</th>
+                                        <th>Set</th>
+                                        <th>Weight</th>
+                                        <th>Rest Betwen Sets</th>
+                                        <th>Start Date</th>
+                                        <th>Duration</th>
+                                        <th>ExpiresOn</th>
+                                    </tr>
+                                </thead>
+
+                                <thead data-ng-repeat="Workout in Workouts">
+
+                                    <tr>
+
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.GMSworkoutType.$invalid}" class="form-group">
+                                                <input class="form-control" ng-model="Workout.taxRate" placeholder="Member ID" ng-init="Workout.taxRate=0" readonly required>
+                                            </div>
+                                        </th>
+
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.WeekDay.$invalid}" class="form-group">
+                                                <select class="form-control" ng-model="Workout.WeekDay" ng-options="enq.Weekdays for enq in Weekdays" required></select>
+                                                <div class="help-block" ng-if="Workout.WeekDay==null" style="color:red">Mandatory Field</div>
+                                                <!--<div ng-show="workoutController.Workout.Weekdays.$error.required">Select service</div>-->
+                                                <!--<div class="help-block" ng-show="addServicesController.Workout.Weekdays.$error.$invalid " style="color:red">Select service</div>
+                                                <div class="help-block" ng-show="addServicesController.Workout.Weekdays.$error.required" style="color:red">Mandatory Field</div>
+                                                <div class="help-block" ng-show="addServicesController.Workout.Weekdays.$error.$dirty" style="color:red">Select service</div>-->
+                                            </div>
+                                        </th>
+
+
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.GMSworkoutType.$invalid}" class="form-group">
+                                                <select class="form-control" ng-model="Workout.GMSworkoutType" ng-options="enq.GMSworkoutType for enq in ExcersiseType" required></select>
+                                                <div class="help-block" ng-if="Workout.GMSworkoutType==null" style="color:red">Mandatory Field</div>
+                                                <!--<div ng-show="workoutController.Workout.GMSworkoutType.$error.required">Select service</div>
+                                                <div class="help-block" ng-show="addServicesController.Workout.GMSworkoutType.$error.$invalid " style="color:red">Select service</div>
+                                                <div class="help-block" ng-show="addServicesController.Workout.GMSworkoutType.$error.required" style="color:red">Mandatory Field</div>
+                                                <div class="help-block" ng-show="addServicesController.Workout.GMSworkoutType.$error.$dirty" style="color:red">Select service</div>-->
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.taxRate.$invalid}" class="form-group">
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <input class="form-control" type="number" ng-model="Workout.taxRate" placeholder="In %" ng-init="Workout.taxRate=0" min="1" max="300" required>
+                                                <div class="help-block" ng-show="workoutController.Workout.taxRate.$error.required" style="color:red">Mandatory Field</div>
+                                                <div class="help-block" ng-show="workoutController.Workout.taxRate.$error.min" style="color:red">Min</div>
+                                                <div class="help-block" ng-show="workoutController.Workout.taxRate.$error.max" style="color:red">Max</div>
+
+                                                <div class="help-block" ng-if="Workout.taxRate==null" style="color:red">Please Enter Number Between 1-300</div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.taxRate.$invalid}" class="form-group">
+                                                <input class="form-control" value="{{Workout.taxRate*serviceCharge/100}}" id="taxcTotal" name="taxTotal" readonly />
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div ng-class="{'has-error': workoutController.Workout.taxRate.$invalid}" class="form-group">
+                                                <button class="remove btn btn-primary" ng-click="removeWorkout($index)">&#10006;</button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+
+                            <!---------------------------------------------------------------------------------------------------------------------------------->
+                            <div class="col-md-5">
+                                <label></label>
+                            </div>
+
+                            <div class="container"><p></p></div>
+
+                            <div class="col-md-12">
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary" ng-disabled="!workoutController.$valid" ng-click="addNewWorkout()">Add Tax</button>
+                                    <div class="container"><p></p></div>
+                                </div>
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-12"><p></p></div>
+                                <br />
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+
+        <!-------------------------------------------------------- User Details Container class  -------------------------------------------------------------------------------------------------------------
+        @Package     :-
+        @Sub-Package :-
+        @Category    :-
+        @Link        :-
+        @Since       :-
+        @Filesource  :-
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <br /><br />
+
+
+</form>
